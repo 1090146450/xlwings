@@ -2,7 +2,7 @@ import xlwings as xl
 
 
 class open_xlsx:
-    with xl.App(visible=False, add_book=False) as app:
+    with xl.App(visible=True, add_book=False) as app:
         # 新建工作蒲
         book = app.books.add()
         SYS_MEMORY = book.sheets.add("03_SYS_MEMORY")
@@ -15,13 +15,13 @@ class open_xlsx:
         CPU.range("B1").value = B1
         A2 = ["MIN", "=MIN(B5:B999999)", "=MIN(C5:C999999)", "=MIN(E5:E999999)"]
         CPU.range("A2").value = A2
-        A3 = ["MIN", "=MIN(B5:B999999)", "=MIN(C5:C999999)", "=MIN(D5:D999999)", "=MIN(E5:E999999)"]
+        A3 = ["MAN", "=MAN(B5:B999999)", "=MAN(C5:C999999)", "=MAN(D5:D999999)", "=MAN(E5:E999999)"]
         CPU.range("A3").value = A3
         B4 = ["TOTAL", "Cpu0", "Cpu1", "Cpu2"]
         CPU.range("B4").value = B4
         ae13 = CPU.range("A1:E3")
         ae13.color = (226, 239, 218)
-        ae13.api.Broders(9).LineStyle = 1
+        ae13.api.Borders(9).LineStyle = 1
         # 表01
 
         book.save("C:/Users/Administrator/Desktop/DV/1.xlsx")

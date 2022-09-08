@@ -1,7 +1,8 @@
 import xlwings as xl
 import win32
+
 # 创建Excel程序  visible程序是否可见运行 add_book是否创建文件博
-with xl.App(visible=False, add_book=False) as app:
+with xl.App(visible=True, add_book=True) as app:
     #     创建新的工作蒲
     book = app.books.add()
     # 创建sheet表
@@ -13,6 +14,6 @@ with xl.App(visible=False, add_book=False) as app:
     sheets1.range("A1").value = "=MIN(A2:A3)"
     aaa = sheets1.range("A2")
     # aaa.api.Broders(9).LineStyle = 1
-    sht=book.api.Font.ColorIndex=3
+    aaa.api.Font.ColorIndex = 3
     # 保存表
     book.save("C:/Users/Administrator/Desktop/DV/123.xlsx")
