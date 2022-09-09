@@ -1,8 +1,4 @@
-import glob
-
-a=glob.glob("")
-if a:
-    print("12312")
-else:
-    print("1111111")
-print(a)
+a = [1, 2, 3]
+if type(a) == "list":
+    print(type(a))
+print(type(a))
