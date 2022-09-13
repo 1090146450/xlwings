@@ -1,0 +1,1163 @@
+map_cavalry: phys: 0x31000000, virt: 0x7fa04e1000, total size: 0x100000
+Cavalry Ucode Version = CV25-Ver.157-20210730-f4e10b14-hl_fw.00000002
+ifconfig eth0 10.0.0.34 netmask 255.255.0.0 up ...
+start system service...
+start invo applications...
+Thu Jun  9 00:00:00 CST 2022
+[2022-06-09 00:00:00.064823][invo-logger-service      ][INF] read ini... autoFlush=50;
+[2022-06-09 00:00:00.064862][invo-logger-service      ][INF] read ini... level=INFO;
+[2022-06-09 00:00:00.064875][invo-logger-service      ][INF] read ini... logger=console;
+[2022-06-09 00:00:00.064890][invo-logger-service      ][INF] read ini... logger.file.filename=/sdcard/invo/log/invo-log.txt;
+[2022-06-09 00:00:00.064904][invo-logger-service      ][INF] read ini... logger.file.maxFileSize=10485760;
+[2022-06-09 00:00:00.064917][invo-logger-service      ][INF] read ini... logger.file.maxBackupFiles=10;
+[2022-06-09 00:00:00.064930][invo-logger-service      ][INF] read ini... logger.console.output=stdout;
+[2022-06-09 00:00:00.064954][invo-logger-service      ][INF] log_conf.level=4
+[2022-06-09 00:00:00.064965][invo-logger-service      ][INF] log_conf.autoFlush=50
+[2022-06-09 00:00:00.064974][invo-logger-service      ][INF] log_conf.loggerFlag=1
+[2022-06-09 00:00:00.064983][invo-logger-service      ][INF] log_conf.filename=/sdcard/invo/log/invo-log.txt
+[2022-06-09 00:00:00.064992][invo-logger-service      ][INF] log_conf.maxFileSize=10485760
+[2022-06-09 00:00:00.065000][invo-logger-service      ][INF] log_conf.maxBackupFiles=10
+[2022-06-09 00:00:00.065012][invo-logger-service      ][INF] logger: conf[/sdcard/invo/invo-logger.conf] loggerType[1] loggerLevel[4]
+
+
+Welcome to Ambarella
+Ambarella login: [2022-06-09 00:00:00.235017][main.cpp                 ][WRN] /usr/bin/invo_app_system start.
+[2022-06-09 00:00:00.238137][rte_thread.c             ][INF] rte_thread_create(rte_led) success: id=547884126400
+[2022-06-09 00:00:00.280553][rte_system.cpp           ][WRN] ----------------------------------------------------------
+[2022-06-09 00:00:00.280586][rte_system.cpp           ][WRN]     ECU VERSION : B3
+[2022-06-09 00:00:00.280595][rte_system.cpp           ][WRN]     PRO VERSION : A88_top
+[2022-06-09 00:00:00.280603][rte_system.cpp           ][WRN]     APP VERSION : 1240
+[2022-06-09 00:00:00.280611][rte_system.cpp           ][WRN]     ERP VERSION : ZA90006AAA
+[2022-06-09 00:00:00.280619][rte_system.cpp           ][WRN]     BUILD STAMP : 2022090615
+[2022-06-09 00:00:00.280626][rte_system.cpp           ][WRN] ----------------------------------------------------------
+[2022-06-09 00:00:00.280659][rte_led.cpp              ][WRN] set LED mode[STOPPED]
+[2022-06-09 00:00:00.280811][rte_thread.c             ][INF] rte_thread_create(rte_monitor) success: id=547875733696
+[2022-06-09 00:00:00.280950][rte_thread.c             ][INF] rte_thread_create(rte_system) success: id=547867340992
+[2022-06-09 00:00:00.315064][rte_system.cpp           ][WRN] RTE[ SYSTEM] inited.
+[2022-06-09 00:00:00.354097][rte_system.cpp           ][WRN] RTE[ UPDATE] inited.
+[2022-06-09 00:00:00.354370][rte_system.cpp           ][WRN] RTE[    SPI] inited.
+[2022-06-09 00:00:00.354716][rte_system.cpp           ][WRN] RTE[    NET] inited.
+[2022-06-09 00:00:00.355078][rte_system.cpp           ][WRN] RTE[    OTA] inited.
+[2022-06-09 00:00:00.355369][rte_system.cpp           ][WRN] RTE[   DATA] inited.
+[2022-06-09 00:00:00.355716][rte_system.cpp           ][WRN] RTE[   BACK] inited.
+[2022-06-09 00:00:00.356066][rte_system.cpp           ][WRN] RTE[ CONFIG] inited.
+[2022-06-09 00:00:00.356396][rte_system.cpp           ][WRN] RTE[ CAMERA] inited.
+[2022-06-09 00:00:00.356864][rte_system.cpp           ][WRN] RTE[ SDCARD] inited.
+[2022-06-09 00:00:00.357209][rte_system.cpp           ][WRN] RTE[ OUTPUT] inited.
+[2022-06-09 00:00:00.357535][rte_system.cpp           ][WRN] RTE[ ETHNET] inited.
+[2022-06-09 00:00:00.357878][rte_system.cpp           ][WRN] RTE[ RECORD] inited.
+[2022-06-09 00:00:00.358210][rte_system.cpp           ][WRN] RTE[ PHOTOS] inited.
+[2022-06-09 00:00:00.358553][rte_system.cpp           ][WRN] RTE[FILEMNG] inited.
+[2022-06-09 00:00:00.358926][rte_system.cpp           ][WRN] RTE[OVERLAY] inited.
+[2022-06-09 00:00:00.359254][rte_system.cpp           ][WRN] RTE[    ALG] inited.
+[2022-06-09 00:00:00.359644][rte_system.cpp           ][WRN] RTE[    OSD] inited.
+[2022-06-09 00:00:00.359982][rte_system.cpp           ][WRN] RTE[ VISION] inited.
+[2022-06-09 00:00:00.360032][rte_system.cpp           ][WRN] all rte proxy inited, start applications ...
+[2022-06-09 00:00:00.360055][rte_system.cpp           ][WRN] run 'app_startup.sh normally' ...
+[2022-06-09 00:00:00.444892][rte_system.cpp           ][WRN] run 'app_startup.sh normally' done.
+[2022-06-09 00:00:00.477052][main.cpp                 ][WRN] invo_app_memory start.
+[2022-06-09 00:00:00.477363][rte_thread.c             ][INF] rte_thread_create(rte_data) success: id=548560822528
+[2022-06-09 00:00:00.477446][rte_thread.c             ][INF] rte_thread_create(rte_back) success: id=548552429824
+[2022-06-09 00:00:00.477469][rte_config.cpp           ][WRN] _load_setting() ...
+[2022-06-09 00:00:00.478945][rte_config.cpp           ][WRN]     alg_license    = 0
+[2022-06-09 00:00:00.478994][rte_config.cpp           ][WRN] _load_setting() done.
+[2022-06-09 00:00:00.479152][rte_thread.c             ][INF] rte_thread_create(rte_config) success: id=548544037120
+[2022-06-09 00:00:00.481041][main.cpp                 ][WRN] invo_app_device start.
+[2022-06-09 00:00:00.481321][rte_thread.c             ][INF] rte_thread_create(rte_sdcard) success: id=548457607392
+[2022-06-09 00:00:00.481381][invo_camera_iav.cpp      ][WRN] open(/dev/iav) success.
+[2022-06-09 00:00:00.481461][rte_thread.c             ][INF] rte_thread_create(rte_camera) success: id=548449214688
+[2022-06-09 00:00:00.481548][rte_thread.c             ][INF] rte_thread_create(rte_output) success: id=548440821984
+[2022-06-09 00:00:00.481797][rte_thread.c             ][INF] rte_thread_create(rte_ethnet) success: id=548432429280
+[2022-06-09 00:00:00.515023][rte_system.cpp           ][WRN] RTE[   DATA] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.515189][rte_system.cpp           ][WRN] RTE[   BACK] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.515279][rte_system.cpp           ][WRN] RTE[ CONFIG] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.522835][main.cpp                 ][WRN] invo_app_com start.
+[2022-06-09 00:00:00.523328][main.cpp                 ][INF] invo_app_com /dev/spidev1.0 test[0] mode[0] loop[0] speed_hz[500000] bits_per_word[8] lsb[0] soc_tx_req[78] mcu_rx_rdy[79]
+[2022-06-09 00:00:00.523345][main.cpp                 ][INF] invo_app_com /dev/spidev0.0 test[0] mode[1] loop[0] speed_hz[15000000] bits_per_word[8] lsb[0] mcu_tx_req[45] mcu_tx_rdy[46]
+[2022-06-09 00:00:00.525274][rte_thread.c             ][INF] rte_thread_create(rte_spi) success: id=548076515520
+[2022-06-09 00:00:00.534274][rte_system.cpp           ][WRN] RTE[ OUTPUT] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.534533][rte_system.cpp           ][WRN] RTE[ ETHNET] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.535304][rte_system.cpp           ][WRN] RTE[ SDCARD] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.539207][rte_system.cpp           ][WRN] RTE[ CAMERA] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.549279][main.cpp                 ][WRN] invo_app_update start.
+[2022-06-09 00:00:00.555024][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:00.555075][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [3,4].
+[2022-06-09 00:00:00.555092][rte_shm.c                ][WRN] rte_shm_create(key[3502] size[1024]) ...
+[2022-06-09 00:00:00.555185][rte_shm.c                ][WRN] rte_shm_create(key[3502] size[1024]) done, fd[1] addr[0x7f82260000].
+[2022-06-09 00:00:00.555344][rte_thread.c             ][INF] rte_thread_create(rte_update) success: id=547644371168
+[2022-06-09 00:00:00.573504][rte_http.c               ][WRN] rte_http_client_create() success.
+[2022-06-09 00:00:00.573627][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:00.573670][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [14,15].
+[2022-06-09 00:00:00.573681][rte_socket_server.c      ][WRN] rte_socket_server_create(server:INADDR_ANY:80) fd:13.
+[2022-06-09 00:00:00.573691][rte_http.c               ][WRN] rte_http_server_create(port[80] path[/workspace]) success.
+[2022-06-09 00:00:00.573721][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:00.573756][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [17,18].
+[2022-06-09 00:00:00.573767][rte_socket_server.c      ][WRN] rte_socket_server_create(server:INADDR_ANY:5096) fd:16.
+[2022-06-09 00:00:00.573947][rte_thread.c             ][INF] rte_thread_create(rte_net) success: id=548042944704
+[2022-06-09 00:00:00.579169][rte_system.cpp           ][WRN] RTE[    SPI] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.580034][rte_system.cpp           ][WRN] RTE[    SPI] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.580489][rte_system.cpp           ][WRN] RTE[    SPI] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.602210][rte_system.cpp           ][WRN] RTE[ UPDATE] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.605904][rte_system.cpp           ][WRN] RTE[    NET] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.860106][main.cpp                 ][WRN] invo_app_vision start.
+[2022-06-09 00:00:00.860467][rte_thread.c             ][INF] rte_thread_create(rte_vision) success: id=547571318928
+[2022-06-09 00:00:00.860611][rte_thread.c             ][INF] rte_thread_create(rte_alg) success: id=547562926224
+[2022-06-09 00:00:00.860735][rte_thread.c             ][INF] rte_thread_create(rte_osd) success: id=547554533520
+[2022-06-09 00:00:00.906444][rte_system.cpp           ][WRN] RTE[    OSD] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.907704][rte_system.cpp           ][WRN] RTE[ VISION] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.910536][rte_system.cpp           ][WRN] RTE[    ALG] startup, version[1.0.0.0].
+[2022-06-09 00:00:00.910552][rte_system.cpp           ][WRN] all modules of group [normal] startup.
+[2022-06-09 00:00:00.912204][rte_sdcard.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.912208][rte_ethnet.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.912270][invo_ethnet.cpp          ][INF] netlink create success.
+[2022-06-09 00:00:00.912327][rte_output.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.912333][invo_sdcard.cpp          ][INF] netlink create success.
+[2022-06-09 00:00:00.912502][rte_thread.c             ][INF] rte_thread_create(invo_ethnet) success: id=548170342624
+[2022-06-09 00:00:00.912562][rte_update.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.912962][rte_camera.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.913942][rte_system.cpp           ][WRN] RTE[ OUTPUT] running.
+[2022-06-09 00:00:00.914241][rte_osd.cpp              ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.914434][rte_config.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.914481][rte_data.cpp             ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.914503][rte_vision.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.914514][rte_system.cpp           ][WRN] RTE[ ETHNET] running.
+[2022-06-09 00:00:00.914560][invo_vision.cpp          ][WRN] start() ...
+[2022-06-09 00:00:00.914570][invo_vision.cpp          ][WRN]     pro_version     : A88_top
+[2022-06-09 00:00:00.914579][invo_vision.cpp          ][WRN]     config_path     : /etc/invo/level_2_A88_top
+[2022-06-09 00:00:00.914588][invo_vision.cpp          ][WRN]     vin_chn_number  : 4
+[2022-06-09 00:00:00.914595][invo_vision.cpp          ][WRN]     prev_canvas_chn : 0
+[2022-06-09 00:00:00.914600][rte_system.cpp           ][WRN] RTE[ CAMERA] running.
+[2022-06-09 00:00:00.914611][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:00.914622][rte_thread.c             ][INF] rte_thread_create(invo_config) success: id=548493680896
+[2022-06-09 00:00:00.914657][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [15,16].
+[2022-06-09 00:00:00.914436][rte_back.cpp             ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.914832][rte_thread.c             ][INF] rte_thread_create(vision-process) success: id=547297927312
+[2022-06-09 00:00:00.914929][rte_thread.c             ][INF] rte_thread_create(vision-monitor) success: id=547289534608
+[2022-06-09 00:00:00.915172][rte_spi.cpp              ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.915195][rte_net.cpp              ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:00.915278][rte_socket_server.c      ][WRN] rte_socket_server_start(server:INADDR_ANY:80) success.
+[2022-06-09 00:00:00.915396][rte_thread.c             ][INF] rte_thread_create(server:INADDR_ANY:80) success: id=548034552000
+[2022-06-09 00:00:00.915430][rte_socket_server.c      ][WRN] rte_socket_server_start(server:INADDR_ANY:5096) success.
+[2022-06-09 00:00:00.915521][rte_thread.c             ][INF] rte_thread_create(server:INADDR_ANY:5096) success: id=548026159296
+[2022-06-09 00:00:00.916280][rte_thread.c             ][INF] rte_thread_create(gpio79.run) success: id=547675435200
+[2022-06-09 00:00:00.916352][invo_spi_hw.cpp          ][INF] InvoSpiHw::open() finish
+[2022-06-09 00:00:00.916444][rte_thread.c             ][INF] rte_thread_create(spi_tp_run_rx) success: id=547667042496
+[2022-06-09 00:00:00.916528][rte_thread.c             ][INF] rte_thread_create(spi_tp_run_tx) success: id=547658649792
+[2022-06-09 00:00:00.916611][rte_thread.c             ][INF] rte_thread_create(spi_tp_msg_rx) success: id=547650257088
+[2022-06-09 00:00:00.916786][rte_thread.c             ][INF] rte_thread_create(fid_result) success: id=547641864384
+[2022-06-09 00:00:00.916874][rte_thread.c             ][INF] rte_thread_create(chd_result) success: id=547633471680
+[2022-06-09 00:00:00.917186][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/fid_result] flag[0]...
+[2022-06-09 00:00:00.917292][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/chd_result] flag[0]...
+[2022-06-09 00:00:00.917293][rte_alg.cpp              ][WRN] on_system_ver(A88_top) ...
+[2022-06-09 00:00:00.919156][rte_system.cpp           ][WRN] RTE[   DATA] running.
+[2022-06-09 00:00:00.919271][rte_system.cpp           ][WRN] RTE[ CONFIG] running.
+[2022-06-09 00:00:00.919348][rte_system.cpp           ][WRN] RTE[   BACK] running.
+[2022-06-09 00:00:00.919445][rte_system.cpp           ][WRN] RTE[    SPI] running.
+[2022-06-09 00:00:00.919664][rte_system.cpp           ][WRN] RTE[    OSD] running.
+[2022-06-09 00:00:00.920393][rte_system.cpp           ][WRN] RTE[ VISION] running.
+[2022-06-09 00:00:00.921793][rte_thread.c             ][INF] rte_thread_create(dms_result) success: id=547625078976
+[2022-06-09 00:00:00.921899][rte_thread.c             ][INF] rte_thread_create(ges_result) success: id=547541217472
+[2022-06-09 00:00:00.921984][rte_thread.c             ][INF] rte_thread_create(oms_result) success: id=547532824768
+[2022-06-09 00:00:00.922419][am_log_monitor.cpp       ][INF] Connection established with kernel.
+[2022-06-09 00:00:00.923155][rte_system.cpp           ][WRN] RTE[    NET] running.
+[2022-06-09 00:00:00.923909][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/dms_result] flag[0]...
+[2022-06-09 00:00:00.927411][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/ges_result] flag[0]...
+[2022-06-09 00:00:00.927563][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/oms_result] flag[0]...
+[2022-06-09 00:00:00.929204][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:00.929282][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [22,27].
+[2022-06-09 00:00:00.929451][rte_thread.c             ][INF] rte_thread_create(alg_ctrl) success: id=546903666832
+[2022-06-09 00:00:00.934777][am_video_utility.cpp     ][WRN] Unknown VIN mode: 1600x1296! Use default value "auto"
+[2022-06-09 00:00:00.934795][rte_system.cpp           ][WRN] RTE[    ALG] running.
+[2022-06-09 00:00:00.936345][am_video_utility.cpp     ][WRN] Unknown VIN mode: 1600x1296! Use default value "auto"
+[2022-06-09 00:00:00.937576][am_video_utility.cpp     ][WRN] Unknown VIN mode: 1600x1296! Use default value "auto"
+[2022-06-09 00:00:00.939236][am_video_utility.cpp     ][WRN] Unknown VIN mode: 1600x1296! Use default value "auto"
+[2022-06-09 00:00:00.939905][rte_file.c               ][WRN] mount(/dev/mmcblk0p11, /tmp/upgrade/, ext4, 0, NULL) success
+[2022-06-09 00:00:00.944558][invo_spi_srv.cpp         ][WRN] MCU STARTUP :
+[2022-06-09 00:00:00.944598][invo_spi_srv.cpp         ][WRN]      McuRunType : APP
+[2022-06-09 00:00:00.944608][invo_spi_srv.cpp         ][WRN]      McuVersion : 1140
+[2022-06-09 00:00:00.944617][invo_spi_srv.cpp         ][WRN]      McuErpCode : ZA20096AAA
+[2022-06-09 00:00:00.944625][invo_spi_srv.cpp         ][WRN]      BuildStamp : 
+[2022-06-09 00:00:00.944632][invo_spi_srv.cpp         ][WRN]      FblVersion : 1090
+[2022-06-09 00:00:00.944640][invo_spi_srv.cpp         ][WRN]      EcuVersion : 1300
+[2022-06-09 00:00:00.944654][invo_spi_srv.cpp         ][WRN]      DiagReqID  : 722
+[2022-06-09 00:00:00.944663][invo_spi_srv.cpp         ][WRN]      DiagResID  : 7A2
+[2022-06-09 00:00:00.944671][invo_spi_srv.cpp         ][WRN]      EcuSnValue :        STC
+[2022-06-09 00:00:00.944679][invo_spi_srv.cpp         ][WRN]      GacPnIndex : F187
+[2022-06-09 00:00:00.944687][invo_spi_srv.cpp         ][WRN]      GacPnValue : 8540023CMV0200
+[2022-06-09 00:00:00.944694][invo_spi_srv.cpp         ][WRN]      GacSwIndex : F189
+[2022-06-09 00:00:00.944702][invo_spi_srv.cpp         ][WRN]      GacSwValue : 8772CMV010  S.000
+[2022-06-09 00:00:00.945722][rte_file.c               ][WRN] umount(/tmp/upgrade/) success
+[2022-06-09 00:00:00.948815][rte_system.cpp           ][WRN] RTE[ UPDATE] running.
+[2022-06-09 00:00:00.956848][invo_spi_srv.cpp         ][WRN]      WakeupSource : IGN
+[2022-06-09 00:00:00.956876][invo_spi_srv.cpp         ][WRN]      FirstCanID   : 0
+[2022-06-09 00:00:00.961482][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.44] OMS1[12.40] OMS2[0.00] OMS3[12.44]
+[2022-06-09 00:00:00.968218][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:00.972869][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.84V] 
+[2022-06-09 00:00:00.979547][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:00.990627][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/dms_result] flag[1]...
+[2022-06-09 00:00:00.990720][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 28.
+[2022-06-09 00:00:00.990734][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 21.
+[2022-06-09 00:00:00.990732][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/oms_result] flag[1]...
+[2022-06-09 00:00:00.990822][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 29.
+[2022-06-09 00:00:00.990835][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/ges_result] flag[1]...
+[2022-06-09 00:00:00.990842][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 26.
+[2022-06-09 00:00:00.990859][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 30.
+[2022-06-09 00:00:00.990870][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/fid_result] flag[1]...
+[2022-06-09 00:00:00.990880][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 25.
+[2022-06-09 00:00:00.990892][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 31.
+[2022-06-09 00:00:00.990903][rte_pipe.c               ][WRN] rte_pipe_create() using fifo[/run/chd_result] flag[1]...
+[2022-06-09 00:00:00.990915][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 23.
+[2022-06-09 00:00:00.990925][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 32.
+[2022-06-09 00:00:00.990950][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = 24.
+[2022-06-09 00:00:00.990979][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991006][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991037][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991078][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991097][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991120][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991137][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991153][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.991183][invo_alg_common.cpp      ][WRN] RUN_ALG_DIRECT
+[2022-06-09 00:00:00.996539][invo_vision.cpp          ][WRN] VoutPort[0]: get param type[6] mode[22] rect{[0,0] [1920x1080]}
+[2022-06-09 00:00:00.998100][invo_camera.cpp          ][WRN] setup() ...
+[2022-06-09 00:00:01.002123][invo_camera.cpp          ][WRN] vsrc[0] vinc[1] : max96712[d6] max96717f[84] ov2311[30] led[00] chip_status[0] vsrc_status[0]
+[2022-06-09 00:00:01.011340][invo_camera.cpp          ][WRN] vsrc[1] vinc[0] : max96712[d6] max96717f[98] ov2778[46] led[22] chip_status[0] vsrc_status[0]
+[2022-06-09 00:00:01.020392][invo_camera.cpp          ][WRN] vsrc[2] vinc[0] : max96712[d6] max96717f[a4] ov2778[48] led[24] chip_status[4] vsrc_status[0]
+[2022-06-09 00:00:01.027389][invo_ethnet.cpp          ][WRN] 'ifconfig eth0 10.0.0.34 netmask 255.255.0.0 up' ...
+[2022-06-09 00:00:01.029369][invo_camera.cpp          ][WRN] vsrc[3] vinc[0] : max96712[d6] max96717f[b4] ov2778[4a] led[28] chip_status[0] vsrc_status[0]
+[2022-06-09 00:00:01.030721][invo_vision.cpp          ][WRN] set_video_mode(Preview) ...
+[2022-06-09 00:00:01.030937][am_encode_device.cpp     ][INF] IAV state: init --> preview!
+[2022-06-09 00:00:01.032333][am_encode_device.cpp     ][INF] IAV state: idle --> preview!
+[2022-06-09 00:00:01.040617][invo_ethnet.cpp          ][WRN] 'ifconfig eth0 10.0.0.34 netmask 255.255.0.0 up' success
+[2022-06-09 00:00:01.040681][invo_ethnet.cpp          ][WRN] 'route add default gw 10.0.0.43' ...
+[2022-06-09 00:00:01.052765][invo_ethnet.cpp          ][WRN] 'route add default gw 10.0.0.43' success
+[2022-06-09 00:00:01.052817][invo_ethnet.cpp          ][WRN] 'echo "nameserver 114.114.114.114" > /etc/resolv.conf' ...
+[2022-06-09 00:00:01.059588][invo_ethnet.cpp          ][WRN] 'echo "nameserver 114.114.114.114" > /etc/resolv.conf' success
+[2022-06-09 00:00:01.059715][invo_ethnet.cpp          ][WRN] eth0 UP HWaddr[02:47:00:00:00:22] IPaddr[10.0.0.34]  mask[255.255.0.0]
+[2022-06-09 00:00:01.071284][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.1] sqi_level[5] break[0] 
+[2022-06-09 00:00:01.156247][invo_sdcard_fs.cpp       ][WRN] found sdcard device
+[2022-06-09 00:00:01.157169][invo_sdcard.cpp          ][WRN] sdcard insert ...
+[2022-06-09 00:00:01.168471][invo_sdcard_fs.cpp       ][WRN] found sdcard mountpoint
+[2022-06-09 00:00:01.168499][invo_sdcard.cpp          ][WRN] sdcard mounted ...
+[2022-06-09 00:00:01.403050][invo_sdcard.cpp          ][INF] SDCARD : type[(0x4d44)] block[64.0KB] total[29.1GB] used[1.4GB] free[27.7GB]
+[2022-06-09 00:00:01.403849][rte_thread.c             ][INF] rte_thread_create(invo_sdcard) success: id=548178735328
+[2022-06-09 00:00:01.405489][rte_system.cpp           ][WRN] RTE[ SDCARD] running.
+[2022-06-09 00:00:01.405540][rte_system.cpp           ][WRN] all modules of group [normal] running.
+[2022-06-09 00:00:01.405550][rte_system.cpp           ][WRN] run 'app_startup.sh others' ...
+[2022-06-09 00:00:01.420550][rte_system.cpp           ][WRN] run 'app_startup.sh others' done.
+[2022-06-09 00:00:01.450132][main.cpp                 ][WRN] invo_app_record start.
+[2022-06-09 00:00:01.450418][rte_thread.c             ][INF] rte_thread_create(rte_record) success: id=547787473152
+[2022-06-09 00:00:01.450529][rte_thread.c             ][INF] rte_thread_create(rte_photos) success: id=547779080448
+[2022-06-09 00:00:01.450621][rte_thread.c             ][INF] rte_thread_create(rte_filemng) success: id=547770687744
+[2022-06-09 00:00:01.450783][rte_thread.c             ][INF] rte_thread_create(rte_overlay) success: id=547762295040
+[2022-06-09 00:00:01.480420][rte_system.cpp           ][WRN] RTE[OVERLAY] startup, version[1.0.0.0].
+[2022-06-09 00:00:01.480627][rte_system.cpp           ][WRN] RTE[FILEMNG] startup, version[1.0.0.0].
+[2022-06-09 00:00:01.480977][rte_system.cpp           ][WRN] RTE[ RECORD] startup, version[1.0.0.0].
+[2022-06-09 00:00:01.481633][rte_system.cpp           ][WRN] RTE[ PHOTOS] startup, version[1.0.0.0].
+[2022-06-09 00:00:01.497389][main.cpp                 ][WRN] invo_app_ota start.
+[2022-06-09 00:00:01.497727][rte_thread.c             ][INF] rte_thread_create(rte_ota) success: id=547707883680
+[2022-06-09 00:00:01.522708][rte_system.cpp           ][WRN] RTE[    OTA] startup, version[1.0.0.0].
+[2022-06-09 00:00:01.522734][rte_system.cpp           ][WRN] all modules of group [others] startup.
+[2022-06-09 00:00:01.527079][rte_overlay.cpp          ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:01.527062][rte_filemng.cpp          ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:01.527135][rte_photos.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:01.527977][rte_record.cpp           ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:01.535542][rte_system.cpp           ][WRN] RTE[OVERLAY] running.
+[2022-06-09 00:00:01.535856][rte_system.cpp           ][WRN] RTE[FILEMNG] running.
+[2022-06-09 00:00:01.538112][rte_system.cpp           ][WRN] RTE[ PHOTOS] running.
+[2022-06-09 00:00:01.538386][rte_system.cpp           ][WRN] RTE[ RECORD] running.
+[2022-06-09 00:00:01.538952][rte_system.cpp           ][WRN] RTE[    OTA] running.
+[2022-06-09 00:00:01.538963][rte_system.cpp           ][WRN] all modules of group [others] running.
+[2022-06-09 00:00:01.541947][rte_sdcard.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.541985][rte_camera.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.542071][rte_output.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.542109][rte_ethnet.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.542178][rte_update.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.542215][rte_vision.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.542555][rte_osd.cpp              ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.542853][rte_alg.cpp              ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.544066][rte_overlay.cpp          ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.544103][rte_record.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.545020][rte_filemng.cpp          ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.544147][rte_photos.cpp           ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.545825][rte_ota.cpp              ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.546337][rte_spi.cpp              ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.547242][rte_net.cpp              ][WRN] on_system_sync() ...
+[2022-06-09 00:00:01.550906][rte_net.cpp              ][WRN] on_alg_status oms0_version[V4.2.9D_A88]
+[2022-06-09 00:00:01.552461][rte_spi.cpp              ][WRN] ALG Active : INVALID
+[2022-06-09 00:00:01.947837][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.36] OMS2[0.00] OMS3[12.40]
+[2022-06-09 00:00:01.965149][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:01.971651][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:02.286372][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[255.9MB] Avai[297.8MB] Cach[54.7MB]
+[2022-06-09 00:00:02.286709][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[32%] Cpu0[23%] Cpu1[26%] Cpu2[47%]
+[2022-06-09 00:00:02.319010][rte_ota.cpp              ][WRN] on_system_run(normally) ...
+[2022-06-09 00:00:02.319191][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:02.319240][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [13,14].
+[2022-06-09 00:00:02.319249][rte_pipe.c               ][WRN] rte_pipe_create() using pipe() ...
+[2022-06-09 00:00:02.319267][rte_pipe.c               ][WRN] rte_pipe_create() done, fd = [15,16].
+[2022-06-09 00:00:02.339633][rte_thread.c             ][INF] rte_thread_create(invo_ota_task) success: id=547465715872
+[2022-06-09 00:00:02.339776][rte_thread.c             ][INF] rte_thread_create(invo_ota_contrl) success: id=547457323168
+[2022-06-09 00:00:02.339788][invo_ota_client.cpp      ][WRN] sn         :        STC
+[2022-06-09 00:00:02.339797][invo_ota_client.cpp      ][WRN] ecuReqId   : 722
+[2022-06-09 00:00:02.339806][invo_ota_client.cpp      ][WRN] ecuResId   : 7A2
+[2022-06-09 00:00:02.339814][invo_ota_client.cpp      ][WRN] ecuSwDid   : 722
+[2022-06-09 00:00:02.339823][invo_ota_client.cpp      ][WRN] server     : 192.168.100.1:8899
+[2022-06-09 00:00:02.339830][invo_ota_client.cpp      ][WRN] workspace  : /workspace/
+[2022-06-09 00:00:02.339840][invo_ota_client.cpp      ][WRN] did        : F187, 14, 6, 8540023CMV0200
+[2022-06-09 00:00:02.339850][invo_ota_client.cpp      ][WRN] did        : F189, 17, 6, 8772CMV010  S.000
+[2022-06-09 00:00:02.534401][am_encode_canvas.cpp     ][INF] Source Buffer[0.0] in Canvas[1]: Type: encode, Input(1600, 1296,    0,    0), Output(1600, 1296,    0,    0), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534479][am_encode_canvas.cpp     ][INF] Source Buffer[0.2] in Canvas[0]: Type: preview, Input(1600, 1080,    0,    0), Output( 960,  536,    0,    0), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534515][am_encode_canvas.cpp     ][INF] Source Buffer[1.0] in Canvas[2]: Type: encode, Input(1920, 1080,    0,    0), Output(1920, 1080,    0,    0), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534543][am_encode_canvas.cpp     ][INF] Source Buffer[1.2] in Canvas[0]: Type: preview, Input(1920, 1080,    0,    0), Output( 960,  536,  960,    0), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534576][am_encode_canvas.cpp     ][INF] Source Buffer[2.0] in Canvas[3]: Type: encode, Input(1920, 1080,    0,    0), Output(1920, 1080,    0,    0), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534604][am_encode_canvas.cpp     ][INF] Source Buffer[2.2] in Canvas[0]: Type: preview, Input(1920, 1080,    0,    0), Output( 960,  536,    0,  536), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534637][am_encode_canvas.cpp     ][INF] Source Buffer[3.0] in Canvas[4]: Type: encode, Input(1920, 1080,    0,    0), Output(1920, 1080,    0,    0), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.534666][am_encode_canvas.cpp     ][INF] Source Buffer[3.2] in Canvas[0]: Type: preview, Input(1920, 1080,    0,    0), Output( 960,  536,  960,  536), cap_skip_itvl = 0, auto_stop = false
+[2022-06-09 00:00:02.876440][am_encode_device.cpp     ][INF] IAV state: preview == preview!
+[2022-06-09 00:00:02.876488][invo_vision.cpp          ][WRN] set_video_mode(Preview) success.
+[2022-06-09 00:00:02.876500][invo_vision.cpp          ][WRN] set_output(OMS-0) ...
+[2022-06-09 00:00:02.876572][invo_vision.cpp          ][WRN]     chan[0.2] : order(0) output(0x0, 1600x1080)
+[2022-06-09 00:00:02.877029][invo_vision.cpp          ][WRN]     chan[1.2] : order(3) output(0x0, 1920x1080)
+[2022-06-09 00:00:02.877374][invo_vision.cpp          ][WRN]     chan[2.2] : order(2) output(0x0, 1920x1080)
+[2022-06-09 00:00:02.909423][invo_vision.cpp          ][WRN]     chan[3.2] : order(1) output(0x0, 1920x1080)
+[2022-06-09 00:00:02.910473][invo_vision.cpp          ][INF] vout_check(): chn[1] chn_his[8] index[1] rect[1920x1080, 0x0]
+[2022-06-09 00:00:02.910510][invo_vision.cpp          ][WRN] set_output(OMS-0) success.
+[2022-06-09 00:00:02.910522][invo_vision.cpp          ][WRN] set_stream(DMS-0, enable) ...
+[2022-06-09 00:00:02.910597][am_encode_device.cpp     ][INF] STREAM[0] state: idle --> encoding!
+[2022-06-09 00:00:02.910655][am_encode_stream.cpp     ][INF] Stream[0] type: H.264, size: 1600x1296, offset: 0x0.
+[2022-06-09 00:00:02.910763][am_encode_stream.cpp     ][INF] >>>Starting to encode stream[0]...
+[2022-06-09 00:00:02.949049][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.28] OMS2[0.00] OMS3[12.32]
+[2022-06-09 00:00:02.970371][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:02.975115][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:02.979561][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:02.987826][invo_spi_tp_if.cpp       ][WRN] [TX] [cnt=  36] [nul=   8] [err=   0] [len=  56] [que=   5] Timer[10s]
+[2022-06-09 00:00:02.987843][invo_spi_tp_if.cpp       ][WRN] [RX] [cnt=  11] [nul=  33] [err=   0] [len=  20] [que=   0] Timer[10s]
+[2022-06-09 00:00:03.134402][am_encode_stream.cpp     ][INF] >>>Stream[0] is encoding...
+[2022-06-09 00:00:03.134533][am_encode_device.cpp     ][INF] STREAM[0] state: encoding == encoding!
+[2022-06-09 00:00:03.134549][invo_vision.cpp          ][WRN] set_stream(DMS-0, enable) success.
+[2022-06-09 00:00:03.136178][invo_camera.cpp          ][WRN] start() ...
+[2022-06-09 00:00:03.136271][invo_camera.cpp          ][WRN] IAV Version : 3.0.6 (Last updated: 20210722)
+[2022-06-09 00:00:03.136383][rte_thread.c             ][INF] rte_thread_create(invo_camera) success: id=548212306144
+[2022-06-09 00:00:03.137322][invo_vision.cpp          ][WRN] ADJ Version : 1     (Last updated: 13488d2)
+[2022-06-09 00:00:03.137350][invo_vision.cpp          ][WRN] AEB Version : 1     (Last updated: 13488d2)
+[2022-06-09 00:00:03.140455][invo_vision.cpp          ][WRN] chn[1] ir_led control value[2]!
+[2022-06-09 00:00:03.149386][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:03.153957][invo_vision.cpp          ][WRN] chn[2] ir_led control value[2]!
+[2022-06-09 00:00:03.153994][invo_vision.cpp          ][WRN] chn[3] ir_led control value[2]!
+[2022-06-09 00:00:03.158362][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:03.161170][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:03.864769][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.7] sqi_level[5] break[0] 
+[2022-06-09 00:00:03.949116][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:03.970361][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:03.975074][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:04.136102][am_interrupts_monitor.cpp][ERR] The vcap interrupt value diff[100] is not valid, monitor interval time is 1000 ms
+[2022-06-09 00:00:04.136308][rte_monitor.cpp          ][ERR] monitor_error_callback : 
+[2022-06-09 00:00:04.136322][rte_monitor.cpp          ][ERR]     pts           : 1654704004
+[2022-06-09 00:00:04.136337][rte_monitor.cpp          ][ERR]     tid           : 429
+[2022-06-09 00:00:04.136346][rte_monitor.cpp          ][ERR]     pthread_id    : 2414887104
+[2022-06-09 00:00:04.136364][rte_monitor.cpp          ][ERR]     module_id     : AM_INTERRUPTS_MONITOR_ID
+[2022-06-09 00:00:04.136374][rte_monitor.cpp          ][ERR]     sys_errno     : 0
+[2022-06-09 00:00:04.136382][rte_monitor.cpp          ][ERR]     line_num      : 664
+[2022-06-09 00:00:04.136390][rte_monitor.cpp          ][ERR]     file_name     : am_interrupts_monitor.cpp
+[2022-06-09 00:00:04.136398][rte_monitor.cpp          ][ERR]     function_name : check_valid_of_vcap
+[2022-06-09 00:00:04.136406][rte_monitor.cpp          ][ERR]     error_msg     : vcap interrupt invalid
+[2022-06-09 00:00:04.136415][rte_monitor.cpp          ][ERR] Interrupt Invalid Error happened, error info : 
+[2022-06-09 00:00:04.136428][rte_monitor.cpp          ][ERR]     interrupt type    : vcap
+[2022-06-09 00:00:04.136437][rte_monitor.cpp          ][ERR]     interval_duration : 1000
+[2022-06-09 00:00:04.136445][rte_monitor.cpp          ][ERR]     last value        : 27
+[2022-06-09 00:00:04.136453][rte_monitor.cpp          ][ERR]     current_value     : 127
+[2022-06-09 00:00:04.138144][invo_vision.cpp          ][WRN]     Stream[0] : Encoding On.
+[2022-06-09 00:00:04.154061][rte_mem_data.c           ][WRN] rte_mem_data_reload() ...
+[2022-06-09 00:00:04.171363][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:04.180357][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:04.182263][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:04.184892][rte_file.c               ][WRN] mount(/dev/mmcblk0p10, /tmp/rte/mem_data_mount, ext4, 0, NULL) success
+[2022-06-09 00:00:04.201531][rte_file.c               ][WRN] "cp /tmp/rte/mem_data_mount/activation_code /tmp/rte/mem_data_share/activation_code" success.
+[2022-06-09 00:00:04.208964][rte_file.c               ][WRN] umount(/tmp/rte/mem_data_mount) success
+[2022-06-09 00:00:04.211337][rte_file.c               ][WRN] mount(/dev/mmcblk0p10, /tmp/rte/mem_data_mount, ext4, 0, NULL) success
+[2022-06-09 00:00:04.224730][rte_file.c               ][WRN] "diff -r /tmp/rte/mem_data_mount/activation_code /tmp/rte/mem_data_share/activation_code" success.
+[2022-06-09 00:00:04.232278][rte_file.c               ][WRN] umount(/tmp/rte/mem_data_mount) success
+[2022-06-09 00:00:04.232317][rte_mem_data.c           ][WRN] rte_mem_data_reload() success.
+[2022-06-09 00:00:04.247518][rte_file.c               ][WRN] "cp /tmp/rte/mem_data_share/activation_code /tmp/sense/active//activation_code" success.
+[2022-06-09 00:00:04.248691][rte_alg.cpp              ][WRN] read activation_code from memory[data] success
+[2022-06-09 00:00:04.248733][invo_alg.cpp             ][WRN] init() : actived online
+[2022-06-09 00:00:04.248811][invo_alg_common.cpp      ][WRN] [dms0] load(/etc/sense/config/dms_xx/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:04.278524][rte_file.c               ][WRN] "cp /etc/sense/config/dms_xx/meta.json /tmp/sense/config/dms_xx/meta.json" success.
+[2022-06-09 00:00:04.286829][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[239.2MB] Avai[283.2MB] Cach[56.5MB]
+[2022-06-09 00:00:04.287186][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[25%] Cpu0[18%] Cpu1[20%] Cpu2[33%]
+[2022-06-09 00:00:04.292066][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/dms_xx/license.lic" success.
+[2022-06-09 00:00:04.292117][invo_alg_dms.cpp         ][WRN] [dms0] init() version[GAC.DMS.V4.2.8D_A88]
+[2022-06-09 00:00:04.293935][rte_spi.cpp              ][WRN] ALG_DMS0 [INITING]
+[2022-06-09 00:00:04.602617][invo_alg_dms.cpp         ][WRN] [dms0] init() success, bitmask[0000003c].
+[2022-06-09 00:00:04.602669][invo_alg_common.cpp      ][WRN] [oms1] load(/etc/sense/config/oms_1x/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:04.604210][rte_spi.cpp              ][WRN] ALG_DMS0 [RUNNING]
+[2022-06-09 00:00:04.633972][rte_file.c               ][WRN] "cp /etc/sense/config/oms_1x/meta.json /tmp/sense/config/oms_1x/meta.json" success.
+[2022-06-09 00:00:04.648686][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/oms_1x/license.lic" success.
+[2022-06-09 00:00:04.648731][invo_alg_oms.cpp         ][WRN] [oms1] init() version[GAC.OMS.V4.2.9D_A88]
+[2022-06-09 00:00:04.650451][rte_spi.cpp              ][WRN] ALG_OMS0 [INITING]
+[2022-06-09 00:00:04.923136][invo_alg_oms.cpp         ][WRN] [oms1] init() success, bitmask[0000068b].
+[2022-06-09 00:00:04.923193][invo_alg_common.cpp      ][WRN] [oms2] load(/etc/sense/config/oms_2x/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:04.924510][rte_spi.cpp              ][WRN] ALG_OMS0 [RUNNING]
+[2022-06-09 00:00:04.949873][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:04.957409][rte_file.c               ][WRN] "cp /etc/sense/config/oms_2x/meta.json /tmp/sense/config/oms_2x/meta.json" success.
+[2022-06-09 00:00:04.969935][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/oms_2x/license.lic" success.
+[2022-06-09 00:00:04.969983][invo_alg_oms.cpp         ][WRN] [oms2] init() version[GAC.OMS.V4.2.9D_A88]
+[2022-06-09 00:00:04.971957][rte_spi.cpp              ][WRN] ALG_OMS1 [INITING]
+[2022-06-09 00:00:04.982304][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:04.985425][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:04.992080][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:05.140082][invo_alg_oms.cpp         ][WRN] [oms2] init() success, bitmask[0000068b].
+[2022-06-09 00:00:05.140125][invo_alg_common.cpp      ][WRN] [oms3] load(/etc/sense/config/oms_2x/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:05.141452][rte_spi.cpp              ][WRN] ALG_OMS1 [RUNNING]
+[2022-06-09 00:00:05.170294][rte_file.c               ][WRN] "cp /etc/sense/config/oms_2x/meta.json /tmp/sense/config/oms_2x/meta.json" success.
+[2022-06-09 00:00:05.183278][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/oms_2x/license.lic" success.
+[2022-06-09 00:00:05.183319][invo_alg_oms.cpp         ][WRN] [oms3] init() version[GAC.OMS.V4.2.9D_A88]
+[2022-06-09 00:00:05.185292][rte_spi.cpp              ][WRN] ALG_OMS2 [INITING]
+[2022-06-09 00:00:05.195887][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:05.208405][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:05.211834][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:05.368079][invo_alg_oms.cpp         ][WRN] [oms3] init() success, bitmask[0000068b].
+[2022-06-09 00:00:05.368169][invo_alg_common.cpp      ][WRN] [ges1] load(/etc/sense/config/ges_1x/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:05.369567][rte_spi.cpp              ][WRN] ALG_OMS2 [RUNNING]
+[2022-06-09 00:00:05.396897][rte_file.c               ][WRN] "cp /etc/sense/config/ges_1x/meta.json /tmp/sense/config/ges_1x/meta.json" success.
+[2022-06-09 00:00:05.410422][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/ges_1x/license.lic" success.
+[2022-06-09 00:00:05.410469][invo_alg_ges.cpp         ][WRN] [ges1] init() version[GAC.Gesture.V4.2.9D_A88]
+[2022-06-09 00:00:05.412273][rte_spi.cpp              ][WRN] ALG_GES0 [INITING]
+[2022-06-09 00:00:05.435383][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:05.510404][invo_alg_ges.cpp         ][WRN] [ges1] init() success, bitmask[00000003].
+[2022-06-09 00:00:05.510460][invo_alg_common.cpp      ][WRN] [ges2] load(/etc/sense/config/ges_2x/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:05.511689][rte_spi.cpp              ][WRN] ALG_GES0 [RUNNING]
+[2022-06-09 00:00:05.540580][rte_file.c               ][WRN] "cp /etc/sense/config/ges_2x/meta.json /tmp/sense/config/ges_2x/meta.json" success.
+[2022-06-09 00:00:05.553319][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/ges_2x/license.lic" success.
+[2022-06-09 00:00:05.553376][invo_alg_ges.cpp         ][WRN] [ges2] init() version[GAC.Gesture.V4.2.9D_A88]
+[2022-06-09 00:00:05.555592][rte_spi.cpp              ][WRN] ALG_GES1 [INITING]
+[2022-06-09 00:00:05.639055][invo_alg_ges.cpp         ][WRN] [ges2] init() success, bitmask[00000003].
+[2022-06-09 00:00:05.640128][invo_alg_common.cpp      ][WRN] [ges3] load(/etc/sense/config/ges_2x/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:05.640308][rte_spi.cpp              ][WRN] ALG_GES1 [RUNNING]
+[2022-06-09 00:00:05.664633][rte_file.c               ][WRN] "cp /etc/sense/config/ges_2x/meta.json /tmp/sense/config/ges_2x/meta.json" success.
+[2022-06-09 00:00:05.677935][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/ges_2x/license.lic" success.
+[2022-06-09 00:00:05.677984][invo_alg_ges.cpp         ][WRN] [ges3] init() version[GAC.Gesture.V4.2.9D_A88]
+[2022-06-09 00:00:05.679944][rte_spi.cpp              ][WRN] ALG_GES2 [INITING]
+[2022-06-09 00:00:05.755819][invo_alg_ges.cpp         ][WRN] [ges3] init() success, bitmask[00000003].
+[2022-06-09 00:00:05.755876][invo_alg_common.cpp      ][WRN] [fid0] load(/etc/sense/config/fid_xx/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:05.757162][rte_spi.cpp              ][WRN] ALG_GES2 [RUNNING]
+[2022-06-09 00:00:05.787005][rte_file.c               ][WRN] "cp /etc/sense/config/fid_xx/meta.json /tmp/sense/config/fid_xx/meta.json" success.
+[2022-06-09 00:00:05.800766][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/fid_xx/license.lic" success.
+[2022-06-09 00:00:05.800810][invo_alg_fid.cpp         ][WRN] [fid0] init() version[GAC.FACEID.V4.2.0D_A88]
+[2022-06-09 00:00:05.802618][rte_spi.cpp              ][WRN] ALG_FID0 [INITING]
+[2022-06-09 00:00:05.951013][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.28] OMS2[0.00] OMS3[12.32]
+[2022-06-09 00:00:05.986392][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:05.993666][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:06.153362][invo_alg_fid.h           ][WRN] FaceIdFeature[0]::load(/tmp/sense/faceid/faceid0.db) ...
+[2022-06-09 00:00:06.181442][rte_file.c               ][ERR] "cp /tmp/rte/mem_data_share/faceid0.db /tmp/sense/faceid//faceid0.db" failed, Resource temporarily unavailable
+[2022-06-09 00:00:06.182735][rte_alg.cpp              ][ERR] read faceid0_feature from memory[data] failed
+[2022-06-09 00:00:06.183727][rte_mem_back.c           ][WRN] rte_mem_back_reload() ...
+[2022-06-09 00:00:06.197190][rte_file.c               ][WRN] "mount_tinyfs /dev/mmcblk0p4 /tmp/rte/mem_back_share" ...
+[2022-06-09 00:00:06.229372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:06.238217][rte_file.c               ][WRN] "mount_tinyfs /dev/mmcblk0p4 /tmp/rte/mem_back_share" success
+[2022-06-09 00:00:06.238255][rte_mem_back.c           ][WRN] rte_mem_back_reload() success.
+[2022-06-09 00:00:06.241401][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:06.244508][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:06.251963][rte_file.c               ][ERR] "cp /tmp/rte/mem_back_share/faceid0.db /tmp/sense/faceid//faceid0.db" failed, Resource temporarily unavailable
+[2022-06-09 00:00:06.253279][rte_alg.cpp              ][ERR] read faceid0_feature from memory[back] failed
+[2022-06-09 00:00:06.253638][invo_alg_fid.cpp         ][WRN] [fid0] init() success.
+[2022-06-09 00:00:06.253689][invo_alg_common.cpp      ][WRN] [fid1] load(/etc/sense/config/fid_xx/meta.json, /etc/sense/license/license.online.lic) ...
+[2022-06-09 00:00:06.254767][rte_spi.cpp              ][WRN] ALG_FID0 [PAUSING]
+[2022-06-09 00:00:06.279473][rte_file.c               ][WRN] "cp /etc/sense/config/fid_xx/meta.json /tmp/sense/config/fid_xx/meta.json" success.
+[2022-06-09 00:00:06.286612][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[185.1MB] Avai[255.9MB] Cach[82.9MB]
+[2022-06-09 00:00:06.286964][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[32%] Cpu0[29%] Cpu1[23%] Cpu2[33%]
+[2022-06-09 00:00:06.292484][rte_file.c               ][WRN] "cp /etc/sense/license/license.online.lic /tmp/sense/config/fid_xx/license.lic" success.
+[2022-06-09 00:00:06.292520][invo_alg_fid.cpp         ][WRN] [fid1] init() version[GAC.FACEID.V4.2.0D_A88]
+[2022-06-09 00:00:06.294440][rte_spi.cpp              ][WRN] ALG_FID1 [INITING]
+[2022-06-09 00:00:06.518012][invo_alg_fid.h           ][WRN] FaceIdFeature[1]::load(/tmp/sense/faceid/faceid1.db) ...
+[2022-06-09 00:00:06.544317][rte_file.c               ][ERR] "cp /tmp/rte/mem_data_share/faceid1.db /tmp/sense/faceid//faceid1.db" failed, Resource temporarily unavailable
+[2022-06-09 00:00:06.545766][rte_alg.cpp              ][ERR] read faceid1_feature from memory[data] failed
+[2022-06-09 00:00:06.559713][rte_file.c               ][ERR] "cp /tmp/rte/mem_back_share/faceid1.db /tmp/sense/faceid//faceid1.db" failed, Resource temporarily unavailable
+[2022-06-09 00:00:06.561161][rte_alg.cpp              ][ERR] read faceid1_feature from memory[back] failed
+[2022-06-09 00:00:06.561530][invo_alg_fid.cpp         ][WRN] [fid1] init() success.
+[2022-06-09 00:00:06.561771][invo_alg_capture.cpp     ][WRN] [chn0:0] start() ...
+[2022-06-09 00:00:06.562794][rte_spi.cpp              ][WRN] ALG_FID1 [PAUSING]
+[2022-06-09 00:00:06.563098][rte_spi.cpp              ][WRN] ALG Active : SUCCESS
+[2022-06-09 00:00:06.564274][rte_thread.c             ][INF] rte_thread_create(alg_run_00) success: id=545025343632
+[2022-06-09 00:00:06.564332][invo_alg_capture.cpp     ][WRN] [chn1:0] start() ...
+[2022-06-09 00:00:06.564441][rte_thread.c             ][INF] rte_thread_create(alg_run_10) success: id=545016950928
+[2022-06-09 00:00:06.564454][invo_alg_capture.cpp     ][WRN] [chn3:0] start() ...
+[2022-06-09 00:00:06.564556][rte_thread.c             ][INF] rte_thread_create(alg_run_30) success: id=545008558224
+[2022-06-09 00:00:06.564602][invo_alg_common.cpp      ][INF] [dms0 RUNNING:    0 fps] bitmask[0000003c] cnt[  1] err[4616194020396236800] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:06.565115][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.565850][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.566140][invo_alg_common.cpp      ][INF] [oms1 RUNNING:    0 fps] bitmask[0000068b] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.566415][invo_alg_common.cpp      ][INF] [ges1 RUNNING:    0 fps] bitmask[00000003] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.566693][invo_alg_common.cpp      ][INF] [oms3 RUNNING:    0 fps] bitmask[0000068b] cnt[  1] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:06.566986][invo_alg_common.cpp      ][INF] [ges3 RUNNING:    0 fps] bitmask[00000003] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.567310][invo_alg_common.cpp      ][INF] [dms0 RUNNING:    0 fps] bitmask[0000003c] cnt[  0] err[545460846592] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:06.567584][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.567884][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.568162][invo_alg_common.cpp      ][INF] [oms1 RUNNING:    0 fps] bitmask[0000068b] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.568428][invo_alg_common.cpp      ][INF] [ges1 RUNNING:    0 fps] bitmask[00000003] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.568723][invo_alg_common.cpp      ][INF] [oms3 RUNNING:    0 fps] bitmask[0000068b] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:06.569015][invo_alg_common.cpp      ][INF] [ges3 RUNNING:    0 fps] bitmask[00000003] cnt[  0] err[365072220160] size[   0x   0] total[   0.0  B/s]
+[2022-06-09 00:00:06.755039][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.5] sqi_level[5] break[0] 
+[2022-06-09 00:00:06.949404][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:06.981108][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:06.986010][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:06.987876][rte_alg.cpp              ][WRN] on_spi_mcu_status power[4->0]
+[2022-06-09 00:00:06.988062][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   23 fps] bitmask[0000003c] cnt[ 10] err[545460846592] size[1600x1296] total[   6.2 KB/s]
+[2022-06-09 00:00:06.988457][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:06.988778][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:06.989257][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   21 fps] bitmask[0000068b] cnt[  9] err[365072220160] size[1920x1080] total[  22.9 KB/s]
+[2022-06-09 00:00:06.989534][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   21 fps] bitmask[00000003] cnt[  9] err[365072220160] size[1920x1080] total[   2.3 KB/s]
+[2022-06-09 00:00:06.989832][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   18 fps] bitmask[0000068b] cnt[  8] err[365072220160] size[1920x1080] total[  22.9 KB/s]
+[2022-06-09 00:00:06.990107][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   21 fps] bitmask[00000003] cnt[  9] err[365072220160] size[1920x1080] total[   2.3 KB/s]
+[2022-06-09 00:00:06.990780][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:06.994062][invo_alg_oms.cpp         ][WRN] oms chn[1] power[0]
+[2022-06-09 00:00:07.009531][invo_alg_oms.cpp         ][WRN] oms chn[3] power[0]
+[2022-06-09 00:00:07.254400][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:07.263377][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:07.265270][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:07.950204][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:07.984464][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:07.991191][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:08.276438][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:08.286424][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[172.3MB] Avai[243.2MB] Cach[82.9MB]
+[2022-06-09 00:00:08.286800][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[34%] Cpu0[34%] Cpu1[28%] Cpu2[31%]
+[2022-06-09 00:00:08.295364][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:08.298804][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:08.507144][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:08.949977][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:08.979638][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:08.986883][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:08.991459][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:08.991881][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:08.992286][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:08.992581][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:08.992895][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   25 fps] bitmask[0000068b] cnt[ 51] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:08.993205][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:08.993492][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:08.993805][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:09.310351][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:09.319406][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:09.322903][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:09.570267][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.4] sqi_level[5] break[0] 
+[2022-06-09 00:00:09.948985][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:09.990995][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:09.997789][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:10.286112][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[171.8MB] Avai[242.6MB] Cach[82.9MB]
+[2022-06-09 00:00:10.286454][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[26%] Cpu0[26%] Cpu1[24%] Cpu2[24%]
+[2022-06-09 00:00:10.347399][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:10.357402][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:10.360826][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:10.949440][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:10.991463][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:10.994801][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:10.995285][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:10.995574][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:10.995887][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:10.996169][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:10.996447][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:10.998953][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:10.999310][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:11.003876][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:11.370409][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:11.379348][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:11.381225][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:11.579084][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:11.949905][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:11.989909][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:11.997107][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:12.286267][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[171.7MB] Avai[242.6MB] Cach[82.9MB]
+[2022-06-09 00:00:12.286637][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[18%] Cpu1[18%] Cpu2[17%]
+[2022-06-09 00:00:12.391374][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:12.399584][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[22.0] sqi_level[5] break[0] 
+[2022-06-09 00:00:12.404368][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:12.407815][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:12.949096][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:12.989777][invo_spi_tp_if.cpp       ][WRN] [TX] [cnt= 244] [nul=  44] [err=   0] [len=  56] [que=   6] Timer[10s]
+[2022-06-09 00:00:12.989836][invo_spi_tp_if.cpp       ][WRN] [RX] [cnt=  62] [nul= 226] [err=   0] [len=  20] [que=   0] Timer[10s]
+[2022-06-09 00:00:13.000824][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:13.001419][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:13.001728][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:13.002055][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:13.002336][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:13.002608][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:13.002939][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:13.007387][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:13.012516][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:13.019283][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:13.425355][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:13.434418][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:13.437839][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:13.951223][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:14.006296][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:14.013117][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:14.286932][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[171.6MB] Avai[242.5MB] Cach[82.9MB]
+[2022-06-09 00:00:14.287273][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[18%] Cpu2[17%]
+[2022-06-09 00:00:14.449400][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:14.467383][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:14.470826][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:14.652161][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:14.950848][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:15.004806][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:15.005393][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:15.005696][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:15.006009][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.2 KB/s]
+[2022-06-09 00:00:15.006292][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:15.006576][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:15.006876][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:15.013538][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:15.018156][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:15.022605][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:15.231277][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[22.6] sqi_level[5] break[0] 
+[2022-06-09 00:00:15.482371][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:15.501360][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:15.504850][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:15.949914][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:16.011041][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:16.017805][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:16.286493][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[171.5MB] Avai[242.4MB] Cach[82.9MB]
+[2022-06-09 00:00:16.286857][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[20%] Cpu1[20%] Cpu2[16%]
+[2022-06-09 00:00:16.364347][rte_monitor.cpp          ][INF] Name                       Pid    VmPeak    VmSize     VmHWM     VmRSS    VmData     VmStk     VmExe     VmLib   Threads
+[2022-06-09 00:00:16.364379][rte_monitor.cpp          ][INF] invo_app_system            388    399676    399640     10832     10832     51196       132       100     17332         6
+[2022-06-09 00:00:16.364395][rte_monitor.cpp          ][INF] invo_app_com               446    941272    941272     12752     12752    135968       132        88     16620        16
+[2022-06-09 00:00:16.364410][rte_monitor.cpp          ][INF] invo_app_ota               528    465952    400416      8896      8896     50616       132        96     19084         7
+[2022-06-09 00:00:16.364426][rte_monitor.cpp          ][INF] invo_app_memory            447    671920    614580      6016      6016     75204       132        12     13096         7
+[2022-06-09 00:00:16.364471][rte_monitor.cpp          ][INF] invo_app_device            448    765460    765424      7236      7232     92040       132        84     15976        10
+[2022-06-09 00:00:16.364487][rte_monitor.cpp          ][INF] invo_app_record            529    819384    753848      4184      4184     83660       132        12     13096         8
+[2022-06-09 00:00:16.364503][rte_monitor.cpp          ][INF] invo_app_vision            450   3060576   2918396     86144     86144    421952       132       124     47132        42
+[2022-06-09 00:00:16.364518][rte_monitor.cpp          ][INF] invo_app_update            449    382308    316772      9832      9832     33992       132        52     17268         4
+[2022-06-09 00:00:16.514454][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:16.524372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:16.526300][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:16.951189][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:17.009208][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:17.009869][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:17.010163][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:17.010434][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:17.010709][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:17.011002][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   25 fps] bitmask[0000068b] cnt[ 51] err[365072220160] size[1920x1080] total[  27.3 KB/s]
+[2022-06-09 00:00:17.011265][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   25 fps] bitmask[00000003] cnt[ 51] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:17.021916][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:17.028723][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:17.035825][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:17.545380][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:17.554418][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:17.558080][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:17.723145][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:17.950596][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:18.015783][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:18.022493][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:18.085167][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[22.5] sqi_level[5] break[0] 
+[2022-06-09 00:00:18.286137][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[171.0MB] Avai[242.3MB] Cach[83.1MB]
+[2022-06-09 00:00:18.286472][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[22%] Cpu1[20%] Cpu2[17%]
+[2022-06-09 00:00:18.570358][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:18.579364][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:18.582424][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:18.951006][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:19.012806][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:19.013358][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:19.013635][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:19.013927][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:19.014204][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:19.014496][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:19.014809][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:19.018906][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:19.023360][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:19.029904][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:19.592384][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:19.601418][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:19.603731][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:19.950387][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:20.028505][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:20.035196][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:20.286648][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.9MB] Avai[242.2MB] Cach[83.1MB]
+[2022-06-09 00:00:20.287019][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[23%] Cpu1[18%] Cpu2[19%]
+[2022-06-09 00:00:20.619372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:20.637433][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:20.639480][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:20.795396][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:20.918117][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.0] sqi_level[5] break[0] 
+[2022-06-09 00:00:20.951702][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:21.016809][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:21.017369][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:21.017661][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:21.018021][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:21.018294][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:21.018572][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:21.018867][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:21.029486][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:21.041316][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:21.041871][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:21.650377][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:21.669394][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:21.673006][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:21.952444][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:22.027160][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:22.033996][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:22.286305][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.9MB] Avai[242.2MB] Cach[83.1MB]
+[2022-06-09 00:00:22.286650][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[22%] Cpu1[19%] Cpu2[19%]
+[2022-06-09 00:00:22.683348][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:22.692337][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:22.694193][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:22.951468][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.36] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:22.989991][invo_spi_tp_if.cpp       ][WRN] [TX] [cnt= 237] [nul=  50] [err=   0] [len=  56] [que=   4] Timer[10s]
+[2022-06-09 00:00:22.990026][invo_spi_tp_if.cpp       ][WRN] [RX] [cnt=  65] [nul= 222] [err=   0] [len=  20] [que=   0] Timer[10s]
+[2022-06-09 00:00:23.020799][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:23.021342][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:23.021624][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:23.021925][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.2 KB/s]
+[2022-06-09 00:00:23.022223][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:23.022494][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:23.022945][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:23.031533][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:23.039163][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:23.045847][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:23.705350][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:23.714361][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:23.717949][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:23.759484][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.1] sqi_level[5] break[0] 
+[2022-06-09 00:00:23.867248][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:23.952357][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:24.039187][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:24.043853][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:24.286824][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.9MB] Avai[242.1MB] Cach[83.1MB]
+[2022-06-09 00:00:24.287156][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[20%] Cpu2[19%]
+[2022-06-09 00:00:24.731356][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:24.741333][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:24.744339][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:24.952226][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:25.024819][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   25 fps] bitmask[0000003c] cnt[ 51] err[545460846592] size[1600x1296] total[   6.0 KB/s]
+[2022-06-09 00:00:25.025558][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:25.026001][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:25.026295][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:25.026565][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:25.026927][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:25.027224][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:25.040024][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:25.044785][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:25.051318][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:25.754365][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:25.763344][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:25.765203][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:25.951469][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:26.038908][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:26.045796][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:26.286497][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.9MB] Avai[242.2MB] Cach[83.1MB]
+[2022-06-09 00:00:26.286847][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[18%] Cpu1[19%] Cpu2[19%]
+[2022-06-09 00:00:26.589475][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[22.0] sqi_level[5] break[0] 
+[2022-06-09 00:00:26.785362][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:26.795985][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:26.799682][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:26.939012][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:26.951319][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:27.029565][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:27.030253][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:27.030550][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:27.030913][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:27.031184][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:27.031447][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:27.031710][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:27.044177][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:27.050836][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:27.055390][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:27.811357][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:27.838368][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:27.840300][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:27.953075][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:28.045222][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:28.049941][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:28.286054][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.8MB] Avai[242.1MB] Cach[83.1MB]
+[2022-06-09 00:00:28.286409][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[18%] Cpu2[21%]
+[2022-06-09 00:00:28.865357][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:28.875372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:28.878540][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:28.953496][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:29.033841][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:29.034887][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:29.035223][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:29.035537][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   25 fps] bitmask[0000068b] cnt[ 51] err[365072220160] size[1920x1080] total[  27.3 KB/s]
+[2022-06-09 00:00:29.035862][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   25 fps] bitmask[00000003] cnt[ 51] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:29.036144][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:29.036411][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:29.052850][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:29.057699][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:29.064383][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:29.437370][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.3] sqi_level[5] break[0] 
+[2022-06-09 00:00:29.899360][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:29.917354][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:29.919278][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:29.953271][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:30.011070][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:30.056953][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:30.061641][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:30.286632][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[171.0MB] Avai[242.3MB] Cach[83.1MB]
+[2022-06-09 00:00:30.286986][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[20%] Cpu1[16%] Cpu2[22%]
+[2022-06-09 00:00:30.935357][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:30.944355][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:30.947366][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:30.954332][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:31.037850][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:31.038493][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:31.038809][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:31.039104][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.2 KB/s]
+[2022-06-09 00:00:31.039377][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.6 KB/s]
+[2022-06-09 00:00:31.039650][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:31.039948][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:31.058842][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:31.065535][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:31.070070][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:31.953335][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:31.959381][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:31.968334][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:31.971360][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:32.059969][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:32.064711][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:32.272898][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.2] sqi_level[5] break[0] 
+[2022-06-09 00:00:32.286151][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.5MB] Avai[242.0MB] Cach[83.4MB]
+[2022-06-09 00:00:32.286490][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[23%] Cpu1[17%] Cpu2[19%]
+[2022-06-09 00:00:32.362579][rte_monitor.cpp          ][INF] Name                       Pid    VmPeak    VmSize     VmHWM     VmRSS    VmData     VmStk     VmExe     VmLib   Threads
+[2022-06-09 00:00:32.362618][rte_monitor.cpp          ][INF] invo_app_system            388    399676    399640     10836     10836     51196       132       100     17332         6
+[2022-06-09 00:00:32.362635][rte_monitor.cpp          ][INF] invo_app_com               446    941272    941272     12752     12752    135968       132        88     16620        16
+[2022-06-09 00:00:32.362651][rte_monitor.cpp          ][INF] invo_app_ota               528    465952    400416      9172      9172     50616       132        96     19084         6
+[2022-06-09 00:00:32.362666][rte_monitor.cpp          ][INF] invo_app_memory            447    671920    614580      6016      6016     75204       132        12     13096         7
+[2022-06-09 00:00:32.362682][rte_monitor.cpp          ][INF] invo_app_device            448    765460    765424      7244      7240     92040       132        84     15976        10
+[2022-06-09 00:00:32.362697][rte_monitor.cpp          ][INF] invo_app_record            529    819384    753848      4464      4464     83660       132        12     13096         7
+[2022-06-09 00:00:32.362713][rte_monitor.cpp          ][INF] invo_app_vision            450   3060576   2918396     86856     86856    422132       132       124     47132        41
+[2022-06-09 00:00:32.362729][rte_monitor.cpp          ][INF] invo_app_update            449    382308    316772      9832      9832     33992       132        52     17268         4
+[2022-06-09 00:00:32.953340][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:32.988354][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:32.991363][invo_spi_tp_if.cpp       ][WRN] [TX] [cnt= 236] [nul=  46] [err=   0] [len=  56] [que=   5] Timer[10s]
+[2022-06-09 00:00:32.991395][invo_spi_tp_if.cpp       ][WRN] [RX] [cnt=  65] [nul= 217] [err=   0] [len=  20] [que=   0] Timer[10s]
+[2022-06-09 00:00:32.997391][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:33.000831][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:33.042177][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:33.042820][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:33.043115][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:33.043397][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:33.043670][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:33.044006][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:33.044282][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   3.7 KB/s]
+[2022-06-09 00:00:33.059107][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:33.063699][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:33.070269][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:33.083113][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:33.953866][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:34.012358][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:34.039380][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:34.041325][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:34.062082][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:34.066688][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:34.286779][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.3MB] Avai[241.8MB] Cach[83.4MB]
+[2022-06-09 00:00:34.287125][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[20%] Cpu2[20%]
+[2022-06-09 00:00:34.954706][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:35.046480][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:35.047097][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:35.047387][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:35.047666][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:35.047979][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:35.048251][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:35.048526][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:35.067351][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:35.069882][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:35.074196][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:35.078959][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:35.081387][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:35.084542][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:35.104094][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.1] sqi_level[5] break[0] 
+[2022-06-09 00:00:35.953432][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:36.078462][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:36.083179][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:36.108363][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:36.117378][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:36.120571][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:36.155121][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:36.286291][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.7MB] Avai[242.2MB] Cach[83.4MB]
+[2022-06-09 00:00:36.286634][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[18%] Cpu1[23%] Cpu2[19%]
+[2022-06-09 00:00:36.953290][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.32]
+[2022-06-09 00:00:37.050814][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:37.051282][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:37.051554][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:37.051849][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:37.052117][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:37.052392][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   25 fps] bitmask[0000068b] cnt[ 51] err[365072220160] size[1920x1080] total[  27.3 KB/s]
+[2022-06-09 00:00:37.052649][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   25 fps] bitmask[00000003] cnt[ 51] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:37.076753][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:37.081771][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:37.088397][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:37.145372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:37.157408][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:37.160882][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:37.941334][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.8] sqi_level[5] break[0] 
+[2022-06-09 00:00:37.953775][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.32]
+[2022-06-09 00:00:38.081778][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:38.088488][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:38.187377][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:38.196368][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:38.199827][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:38.286840][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.5MB] Avai[242.0MB] Cach[83.4MB]
+[2022-06-09 00:00:38.287172][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[21%] Cpu2[19%]
+[2022-06-09 00:00:38.954501][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:39.054812][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:39.055412][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:39.055706][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:39.056002][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.2 KB/s]
+[2022-06-09 00:00:39.056263][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:39.056523][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:39.056802][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:39.077166][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.38] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:39.084044][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:39.088783][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:39.212404][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:39.227168][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:39.230353][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:39.234099][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:39.954061][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:40.087481][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:40.092182][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:40.247349][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:40.265413][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:40.268843][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:40.286355][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.6MB] Avai[242.1MB] Cach[83.4MB]
+[2022-06-09 00:00:40.286702][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[21%] Cpu1[20%] Cpu2[19%]
+[2022-06-09 00:00:40.787811][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.4] sqi_level[5] break[0] 
+[2022-06-09 00:00:40.954486][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:41.058813][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:41.059260][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:41.059532][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:41.059826][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:41.060098][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:41.060366][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:41.060892][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:41.092282][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.38] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:41.097005][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:41.103601][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:41.280385][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:41.308369][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:41.311881][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:41.953048][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:42.090303][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:42.097029][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:42.286913][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.6MB] Avai[242.1MB] Cach[83.4MB]
+[2022-06-09 00:00:42.287248][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[21%] Cpu2[18%]
+[2022-06-09 00:00:42.299049][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:42.325364][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:42.334350][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:42.337332][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:42.955987][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:42.992197][invo_spi_tp_if.cpp       ][WRN] [TX] [cnt= 238] [nul=  45] [err=   0] [len=  56] [que=   5] Timer[10s]
+[2022-06-09 00:00:42.992227][invo_spi_tp_if.cpp       ][WRN] [RX] [cnt=  65] [nul= 218] [err=   0] [len=  20] [que=   0] Timer[10s]
+[2022-06-09 00:00:43.063234][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:43.063847][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:43.064140][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:43.064431][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:43.064709][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:43.065001][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:43.065310][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   3.1 KB/s]
+[2022-06-09 00:00:43.098361][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:43.102971][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:43.109486][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:43.348204][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:43.365370][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:43.368445][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:43.613305][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.7] sqi_level[5] break[0] 
+[2022-06-09 00:00:43.954006][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:44.097339][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:44.104103][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:44.286464][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.5MB] Avai[242.0MB] Cach[83.4MB]
+[2022-06-09 00:00:44.286831][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[19%] Cpu1[21%] Cpu2[18%]
+[2022-06-09 00:00:44.382384][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:44.400372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:44.402249][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:44.955028][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:45.067669][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   25 fps] bitmask[0000003c] cnt[ 51] err[545460846592] size[1600x1296] total[   6.0 KB/s]
+[2022-06-09 00:00:45.068371][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:45.068703][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:45.069012][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:45.069310][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:45.069584][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:45.069877][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   3.1 KB/s]
+[2022-06-09 00:00:45.099078][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:45.103765][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:45.108276][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:45.371075][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:45.412384][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:45.421592][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:45.423530][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:45.955376][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:46.108965][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:46.116128][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:46.286106][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.5MB] Avai[242.0MB] Cach[83.4MB]
+[2022-06-09 00:00:46.286458][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[20%] Cpu1[19%] Cpu2[19%]
+[2022-06-09 00:00:46.433759][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:46.444428][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.2] sqi_level[5] break[0] 
+[2022-06-09 00:00:46.460354][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:46.463808][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:46.954984][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:47.071836][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:47.072522][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:47.072879][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:47.073177][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.2 KB/s]
+[2022-06-09 00:00:47.073461][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:47.073758][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:47.074043][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:47.106985][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:47.111724][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:47.118308][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:47.473660][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:47.485354][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:47.488970][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:47.954809][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:48.108822][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:48.115591][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:48.286641][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.4MB] Avai[242.0MB] Cach[83.4MB]
+[2022-06-09 00:00:48.286990][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[21%] Cpu1[18%] Cpu2[21%]
+[2022-06-09 00:00:48.377510][rte_monitor.cpp          ][INF] Name                       Pid    VmPeak    VmSize     VmHWM     VmRSS    VmData     VmStk     VmExe     VmLib   Threads
+[2022-06-09 00:00:48.377541][rte_monitor.cpp          ][INF] invo_app_system            388    399676    399640     10840     10836     51196       132       100     17332         6
+[2022-06-09 00:00:48.377557][rte_monitor.cpp          ][INF] invo_app_com               446    941272    941272     12752     12752    135968       132        88     16620        16
+[2022-06-09 00:00:48.377573][rte_monitor.cpp          ][INF] invo_app_ota               528    465952    400416      9172      9172     50616       132        96     19084         6
+[2022-06-09 00:00:48.377612][rte_monitor.cpp          ][INF] invo_app_memory            447    671920    614580      6016      6016     75204       132        12     13096         7
+[2022-06-09 00:00:48.377628][rte_monitor.cpp          ][INF] invo_app_device            448    765460    765424      7252      7248     92040       132        84     15976        10
+[2022-06-09 00:00:48.377644][rte_monitor.cpp          ][INF] invo_app_record            529    819384    753848      4464      4464     83660       132        12     13096         7
+[2022-06-09 00:00:48.377659][rte_monitor.cpp          ][INF] invo_app_vision            450   3060576   2918560     86896     86896    422168       132       124     47132        41
+[2022-06-09 00:00:48.377675][rte_monitor.cpp          ][INF] invo_app_update            449    382308    316772      9832      9832     33992       132        52     17268         4
+[2022-06-09 00:00:48.443139][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:48.505360][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:48.515409][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:48.518839][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:48.955305][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:49.076425][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:49.077061][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:49.077343][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:49.077622][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  27.3 KB/s]
+[2022-06-09 00:00:49.077911][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:49.078186][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:49.078463][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:49.118103][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:49.124957][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:49.129730][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:49.275833][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[20.7] sqi_level[5] break[0] 
+[2022-06-09 00:00:49.539365][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:49.557372][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:49.559266][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:49.955492][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:50.117945][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:50.124702][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:50.286229][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.4MB] Avai[241.9MB] Cach[83.4MB]
+[2022-06-09 00:00:50.286603][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[19%] Cpu1[21%] Cpu2[20%]
+[2022-06-09 00:00:50.572417][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:50.599381][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:50.601542][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:50.955109][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:51.080538][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:51.081084][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:51.081359][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:51.081639][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:51.081926][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:51.082198][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:51.082484][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:51.116578][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:51.123392][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:51.129958][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:51.515122][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:51.625366][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:51.636357][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:51.639433][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:51.956214][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:52.100959][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.9] sqi_level[5] break[0] 
+[2022-06-09 00:00:52.119556][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:52.126327][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:52.286996][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.6MB] Avai[242.1MB] Cach[83.4MB]
+[2022-06-09 00:00:52.287357][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[19%] Cpu1[21%] Cpu2[19%]
+[2022-06-09 00:00:52.650368][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:52.668400][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:52.671832][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:52.954324][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:52.992427][invo_spi_tp_if.cpp       ][WRN] [TX] [cnt= 237] [nul=  48] [err=   0] [len=  56] [que=   5] Timer[10s]
+[2022-06-09 00:00:52.992462][invo_spi_tp_if.cpp       ][WRN] [RX] [cnt=  65] [nul= 220] [err=   0] [len=  20] [que=   0] Timer[10s]
+[2022-06-09 00:00:53.084224][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:53.084846][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:53.085137][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:53.085421][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:53.085723][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:53.086022][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:53.086288][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:53.130353][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:53.137430][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:53.142549][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:53.682369][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:53.691366][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:53.693220][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:53.956003][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:54.129218][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:54.135895][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:54.287769][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.4MB] Avai[241.9MB] Cach[83.4MB]
+[2022-06-09 00:00:54.288107][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[19%] Cpu0[20%] Cpu1[21%] Cpu2[19%]
+[2022-06-09 00:00:54.587271][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:54.705356][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:54.714364][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:54.717930][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:54.940059][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.6] sqi_level[5] break[0] 
+[2022-06-09 00:00:54.958649][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:55.087548][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:55.088100][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:55.088398][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:55.088687][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.3 KB/s]
+[2022-06-09 00:00:55.088975][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:55.089263][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 49] err[365072220160] size[1920x1080] total[  26.3 KB/s]
+[2022-06-09 00:00:55.089530][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 49] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:55.126299][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:55.131126][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:55.137685][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:55.730358][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:55.757368][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:55.759502][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:55.955494][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.36] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:56.136651][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:56.141457][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:56.287351][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.3MB] Avai[241.9MB] Cach[83.4MB]
+[2022-06-09 00:00:56.287720][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[20%] Cpu1[22%] Cpu2[18%]
+[2022-06-09 00:00:56.784365][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:56.793369][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:56.796825][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:56.955753][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:57.091826][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:57.092433][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:57.092718][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:57.093026][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:57.093313][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:57.093590][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   25 fps] bitmask[0000068b] cnt[ 51] err[365072220160] size[1920x1080] total[  27.3 KB/s]
+[2022-06-09 00:00:57.093907][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   25 fps] bitmask[00000003] cnt[ 51] err[365072220160] size[1920x1080] total[   2.8 KB/s]
+[2022-06-09 00:00:57.140147][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:57.146944][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:57.151510][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:57.659033][rte_socket_client.c      ][ERR] getsockopt(192.168.100.1:8899) failed, error = 113, Operation now in progress
+[2022-06-09 00:00:57.771646][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[0->0] sqi_value[21.7] sqi_level[5] break[0] 
+[2022-06-09 00:00:57.808369][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:57.826373][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:57.829828][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:57.955102][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.36] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:58.140719][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:58.145394][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:58.287495][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.4MB] Avai[241.9MB] Cach[83.4MB]
+[2022-06-09 00:00:58.287958][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[21%] Cpu1[22%] Cpu2[20%]
+[2022-06-09 00:00:58.842355][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:58.869359][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:58.872785][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:58.956591][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:00:59.095812][invo_alg_common.cpp      ][INF] [dms0 RUNNING:   24 fps] bitmask[0000003c] cnt[ 50] err[545460846592] size[1600x1296] total[   5.9 KB/s]
+[2022-06-09 00:00:59.096399][invo_alg_common.cpp      ][INF] [fid0 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1600x1296] total[   0.0  B/s]
+[2022-06-09 00:00:59.096686][invo_alg_common.cpp      ][INF] [fid1 PAUSING:    0 fps] bitmask[00000000] cnt[  0] err[365072220160] size[1920x1080] total[   0.0  B/s]
+[2022-06-09 00:00:59.097002][invo_alg_common.cpp      ][INF] [oms1 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:59.097293][invo_alg_common.cpp      ][INF] [ges1 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:59.097576][invo_alg_common.cpp      ][INF] [oms3 RUNNING:   24 fps] bitmask[0000068b] cnt[ 50] err[365072220160] size[1920x1080] total[  26.8 KB/s]
+[2022-06-09 00:00:59.097871][invo_alg_common.cpp      ][INF] [ges3 RUNNING:   24 fps] bitmask[00000003] cnt[ 50] err[365072220160] size[1920x1080] total[   2.7 KB/s]
+[2022-06-09 00:00:59.141229][invo_spi_srv.cpp         ][INF] ECU VOLTAGE: 3V3[3.37] 1V8[1.83] 1V2[1.24] 1V1[1.12] 5V0[4.98] 
+[2022-06-09 00:00:59.148582][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:00:59.151142][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:00:59.887352][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[01] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:59.914377][invo_camera_dev.cpp      ][INF] vinc[00] NORMAL  vsrc[03] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:59.916292][invo_camera_dev.cpp      ][INF] vinc[01] NORMAL  vsrc[00] ENA|ACT sen[OK] ser[OK] des[OK] vol[OK] lock[OK] errb[OK]
+[2022-06-09 00:00:59.960470][invo_spi_srv.cpp         ][INF] CAM VOLTAGE: DMS0[12.40] OMS1[12.32] OMS2[0.00] OMS3[12.36]
+[2022-06-09 00:01:00.144463][invo_spi_srv.cpp         ][INF] MCU STATUS : NM[Normal] BUS[Normal] CAN[Silence] PWR[OFF] BAT[12.76V] 
+[2022-06-09 00:01:00.149199][invo_spi_srv.cpp         ][INF] MCU SYSTIME: [0000/00/00 00:00:00] is invalid!
+[2022-06-09 00:01:00.287096][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977.5MB] Free[170.5MB] Avai[242.1MB] Cach[83.4MB]
+[2022-06-09 00:01:00.287443][rte_monitor.cpp          ][INF] CPU OCCUPY : Total[20%] Cpu0[20%] Cpu1[21%] Cpu2[20%]
