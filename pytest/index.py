@@ -1,4 +1,5 @@
 from BasePage import BasePage
+import test_02
 
 # 创建表1
 bp = BasePage()
@@ -19,6 +20,8 @@ bp.cell_Line(bt[0], "A1:E4")
 # x修改表底色
 bp.cell_colo(bt[0], "A4:E4", (252, 228, 214))
 bp.cell_colo(bt[0], "A1:E3")
+# 添加数据
+bp.add_cell(bt[0],"A5",test_02.Cup_A,transpose=True)
 
 # 表2
 name = ["A1:B5", "I1:J5"]

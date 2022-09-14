@@ -20,4 +20,4 @@ def Input():
 
 
 Input()
-print(Cup_B, Cup_C, Cup_D, Cup_E)
+
