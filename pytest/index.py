@@ -1,6 +1,7 @@
 from BasePage import BasePage
 import test_02
 
+test_02.Input()
 # 创建表1
 bp = BasePage()
 bp.add_sheets(["03_SYS_MEMOPY", "02_SQI", "01_FPS", "00_CPU"])
@@ -21,31 +22,41 @@ bp.cell_Line(bt[0], "A1:E4")
 bp.cell_colo(bt[0], "A4:E4", (252, 228, 214))
 bp.cell_colo(bt[0], "A1:E3")
 # 添加数据
-bp.add_cell(bt[0],"A5",test_02.Cup_A,transpose=True)
+bp.add_cell(bt[0], "A5", test_02.Cup_A, transpose=True)
+bp.add_cell(bt[0], "B5", test_02.Cup_B, transpose=True)
+bp.add_cell(bt[0], "C5", test_02.Cup_C, transpose=True)
+bp.add_cell(bt[0], "D5", test_02.Cup_D, transpose=True)
+bp.add_cell(bt[0], "E5", test_02.Cup_E, transpose=True)
 
 # 表2
-name = ["A1:B5", "I1:J5"]
-dms0 = ["A1:B1", "I1:J1", "A1", "I1"]
+name = ["A1:H5"]
+dms0 = ["A1:B1", "C1:D1", "E1:F1", "G1:H1", "A1", "I1"]
 FPS_1 = [[["dms0", "", "MIN", "MAX", ">25"],
           [" ", "FPS", "=MIN(B6:B999999)", "=MAX(B6:B999999)", "=COUNTIF(B6:B999999,\">25\")"]],
          [["oms1", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(J6:J999999)", "=COUNTIF(J6:J999999,\">25\")"]]]
+          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(D6:J999999)", "=COUNTIF(D6:J999999,\">25\")"]],
+         [["oms2", "", "MIN", "MAX", ">25"],
+          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(F6:J999999)", "=COUNTIF(F6:J999999,\">25\")"]],
+         [["oms3", "", "MIN", "MAX", ">25"],
+          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(H6:J999999)", "=COUNTIF(H6:J999999,\">25\")"]]
+         ]
 # 单元格居中
 bp.cell_Center(bt[1])
-for i in range(0, 2):
+for i in range(0, 4):
     # 修改单元格宽度
-    bp.cell_wide(bt[1], dms0[i + 2], 26)
+    bp.cell_wide(bt[1], dms0[i], 26)
     # 填入数据
-    if i == 0:
-        bp.add_cell(bt[1], name[i], FPS_1[0], transpose=True)
-    else:
-        bp.add_cell(bt[1], name[i], FPS_1[1], transpose=True)
+    bp.add_cell(bt[1], dms0[i], FPS_1[i], transpose=True)
     # 修改颜色
-    bp.cell_colo(bt[1], name[i])
+    bp.cell_colo(bt[1], name[0])
     # 合并单元格
     bp.cell_merge(bt[1], dms0[i])
     # 设置边框
-    bp.cell_Line(bt[1], name[i])
+    bp.cell_Line(bt[1], name[0])
+bp.add_cell(bt[1], "A5", test_02.Cup_A, transpose=True)
+bp.add_cell(bt[1], "B5", test_02.Cup_B, transpose=True)
+bp.add_cell(bt[1], "C5", test_02.Cup_C, transpose=True)
+bp.add_cell(bt[1], "D5", test_02.Cup_D, transpose=True)
 
 # 表3
 sqi_date = [["", "sqi_value", "sqi_level"],
