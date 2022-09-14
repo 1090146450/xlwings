@@ -45,7 +45,7 @@ class BasePage:
         bt.range(name).api.Merge()
 
     # 退出保存
-    def quit(self, id="C:/Users/AN/Desktop/test.xlsx"):
+    def quit(self, id="D:/test.xlsx"):
         self.book.save(id)
         self.book.close()
         self.app.quit()
