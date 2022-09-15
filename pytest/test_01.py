@@ -2,7 +2,6 @@ import re
 
 Cup_A, Cup_B, Cup_C, Cup_D, Cup_E = [], [], [], [], []
 
-
 # with open("C:/Users/AN/Desktop/123.txt", mode="r", encoding="UTF-8") as op:
 #     while True:
 #         a = op.readline()
@@ -19,16 +18,28 @@ Cup_A, Cup_B, Cup_C, Cup_D, Cup_E = [], [], [], [], []
 #
 #         if a == "":
 #             break
-def link():
-    filepath = "../teraterm.log"
-    txt = open(filepath, mode="r", encoding="UTF-8").read()
-    result = ""
-    Cpu = re.findall(r"oms1 RUNNING:(\s+\d+) fps", txt)
-    Sqi = re.findall(r"sqi_value.(\d+\.\d+).", txt)
-    result = result + "\n".join(Cpu)
-    fileResult = open("../sql.txt", mode="a", encoding="UTF-8")
-    fileResult.write(result)
-    print(Sqi)
+# def link():
+#     filepath = "../teraterm.log"
+#     txt = open(filepath, mode="r", encoding="UTF-8").read()
+#     result = ""
+#     Cpu = re.findall(r"oms1 RUNNING:(\s+\d+) fps", txt)
+#     Sqi = re.findall(r"sqi_value.(\d+\.\d+).", txt)
+#     Sqi_1=[]
+#     if Sqi:
+#         Sqi_1 += re.findall(r"....-..-.. (\d\d:\d\d\:\d\d)\.", txt)
+#     result = result + "\n".join(Cpu)
+#     fileResult = open("../sql.txt", mode="a", encoding="UTF-8")
+#     fileResult.write(result)
+#     print(len(Sqi),len(Sqi_1))
+Sqi, Sqi_1 = [], []
+with open("../teraterm.log", mode="r", encoding="UTF-8") as op:
+    while True:
+        a = op.readline()
+        Sqi_value = re.findall(r"sqi_value.(\d+\.\d+).", a)
+        if Sqi_value:
+            Sqi += Sqi_value
+            Sqi_1 += re.findall(r"....-..-.. (\d\d:\d\d:\d\d)\.", a)
 
-
-link()
+        if a == "":
+            break
+print(len(Sqi_1), len(Sqi))

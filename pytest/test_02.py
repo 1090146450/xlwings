@@ -41,9 +41,7 @@ def Input():
                 Fps_D[1].append(a[78:80])
             Sqi_value = re.findall(r"sqi_value.(\d+\.\d+).", a)
             if Sqi_value:
-                Sqi[0] += Sqi_value
-                 
-            if "sqi_value" in a:
-                Sqi[0].append(a[12:20])
+                Sqi[1] += Sqi_value
+                Sqi[0] += re.findall(r"....-..-.. (\d\d:\d\d:\d\d)\.", a)
             if a == "":
                 break

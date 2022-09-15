@@ -77,7 +77,9 @@ bp.cell_colo(bt[2], sqi)
 bp.cell_Line(bt[2], sqi)
 # 单元格居中
 bp.cell_Center(bt[2])
-bp.add_cell(bt[2], "B4", test_02.Sqi[0], transpose=True)
+bp.add_cell(bt[2],"A4",test_02.Sqi[0],transpose=True)
+bp.add_cell(bt[2], "B4", test_02.Sqi[1], transpose=True)
+
 
 # 表4
 SYS_date = [["", "Total", "Free", "Avai", "Cach"],
