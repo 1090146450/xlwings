@@ -1,4 +1,8 @@
+import re
+
 Cup_A, Cup_B, Cup_C, Cup_D, Cup_E = [], [], [], [], []
+
+
 # with open("C:/Users/AN/Desktop/123.txt", mode="r", encoding="UTF-8") as op:
 #     while True:
 #         a = op.readline()
@@ -15,10 +19,16 @@ Cup_A, Cup_B, Cup_C, Cup_D, Cup_E = [], [], [], [], []
 #
 #         if a == "":
 #             break
-for i in range(0, 10000):
-    Cup_A.append(i)
-    Cup_B.append(i)
-    Cup_C.append(i)
-    Cup_D.append(i)
-    Cup_E.append(i)
-print(len(Cup_A), len(Cup_E), len(Cup_B), len(Cup_C), len(Cup_D))
+def link():
+    filepath = "../teraterm.log"
+    txt = open(filepath, mode="r", encoding="UTF-8").read()
+    result = ""
+    Cpu = re.findall(r"oms1 RUNNING:(\s+\d+) fps", txt)
+    Sqi = re.findall(r"sqi_value.(\d+\.\d+).", txt)
+    result = result + "\n".join(Cpu)
+    fileResult = open("../sql.txt", mode="a", encoding="UTF-8")
+    fileResult.write(result)
+    print(Sqi)
+
+
+link()

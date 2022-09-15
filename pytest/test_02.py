@@ -1,5 +1,9 @@
+import re
+
 Cup_A, Cup_B, Cup_C, Cup_D, Cup_E = [], [], [], [], []
-Fps_A, Fps_B, Fps_C, Fps_D= [], [], [], []
+Fps_A, Fps_B, Fps_C, Fps_D = [[], []], [[], []], [[], []], [[], []]
+Sqi = [[], []]
+
 
 def Input():
     with open("../teraterm.log", mode="r", encoding="UTF-8") as op:
@@ -24,14 +28,22 @@ def Input():
                 else:
                     Cup_E.append(" ")
             if "dms0 RUNNING" in a:
-                Fps_A.append(a[77:79])
+                Fps_A[0].append(a[12:20])
+                Fps_A[1] = Fps_A[1] + (re.findall(r"dms0 RUNNING: (\s+\d+) fps", a))
             if "oms1 RUNNING" in a:
-                Fps_B.append(a[77:79])
+                Fps_B[0].append(a[12:20])
+                Fps_B[1] = Fps_B[1] + (re.findall(r"oms1 RUNNING: (\s+\d+) fps", a))
             if "oms2 RUNNING" in a:
-                Fps_C.append(a[77:79])
+                Fps_C[0].append(a[12:20])
+                Fps_C[1].append(a[78:80])
             if "oms3 RUNNING" in a:
-                Fps_D.append(a[77:79])
+                Fps_D[0].append(a[12:20])
+                Fps_D[1].append(a[78:80])
+            Sqi_value = re.findall(r"sqi_value.(\d+\.\d+).", a)
+            if Sqi_value:
+                Sqi[0] += Sqi_value
+                 
+            if "sqi_value" in a:
+                Sqi[0].append(a[12:20])
             if a == "":
                 break
-
-

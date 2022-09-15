@@ -34,17 +34,17 @@ dms0 = ["A1:B1", "C1:D1", "E1:F1", "G1:H1", "A1", "I1"]
 FPS_1 = [[["dms0", "", "MIN", "MAX", ">25"],
           [" ", "FPS", "=MIN(B6:B999999)", "=MAX(B6:B999999)", "=COUNTIF(B6:B999999,\">25\")"]],
          [["oms1", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(D6:J999999)", "=COUNTIF(D6:J999999,\">25\")"]],
+          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(D6:D999999)", "=COUNTIF(D6:D999999,\">25\")"]],
          [["oms2", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(F6:J999999)", "=COUNTIF(F6:J999999,\">25\")"]],
+          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(F6:F999999)", "=COUNTIF(F6:F999999,\">25\")"]],
          [["oms3", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(H6:J999999)", "=COUNTIF(H6:J999999,\">25\")"]]
+          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(H6:H999999)", "=COUNTIF(H6:H999999,\">25\")"]]
          ]
 # 单元格居中
 bp.cell_Center(bt[1])
 for i in range(0, 4):
     # 修改单元格宽度
-    bp.cell_wide(bt[1], dms0[i], 26)
+    bp.cell_wide(bt[1], dms0[i], 13)
     # 填入数据
     bp.add_cell(bt[1], dms0[i], FPS_1[i], transpose=True)
     # 修改颜色
@@ -53,10 +53,14 @@ for i in range(0, 4):
     bp.cell_merge(bt[1], dms0[i])
     # 设置边框
     bp.cell_Line(bt[1], name[0])
-bp.add_cell(bt[1], "A5", test_02.Cup_A, transpose=True)
-bp.add_cell(bt[1], "B5", test_02.Cup_B, transpose=True)
-bp.add_cell(bt[1], "C5", test_02.Cup_C, transpose=True)
-bp.add_cell(bt[1], "D5", test_02.Cup_D, transpose=True)
+bp.add_cell(bt[1], "A6", test_02.Fps_A[0], transpose=True)
+bp.add_cell(bt[1], "B6", test_02.Fps_A[1], transpose=True)
+bp.add_cell(bt[1], "C6", test_02.Fps_B[0], transpose=True)
+bp.add_cell(bt[1], "D6", test_02.Fps_B[1], transpose=True)
+bp.add_cell(bt[1], "E6", test_02.Fps_C[0], transpose=True)
+bp.add_cell(bt[1], "F6", test_02.Fps_C[1], transpose=True)
+bp.add_cell(bt[1], "G6", test_02.Fps_D[0], transpose=True)
+bp.add_cell(bt[1], "H6", test_02.Fps_D[1], transpose=True)
 
 # 表3
 sqi_date = [["", "sqi_value", "sqi_level"],
@@ -73,6 +77,7 @@ bp.cell_colo(bt[2], sqi)
 bp.cell_Line(bt[2], sqi)
 # 单元格居中
 bp.cell_Center(bt[2])
+bp.add_cell(bt[2], "B4", test_02.Sqi[0], transpose=True)
 
 # 表4
 SYS_date = [["", "Total", "Free", "Avai", "Cach"],
