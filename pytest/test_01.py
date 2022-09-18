@@ -32,24 +32,19 @@ Cup_A, Cup_B, Cup_C, Cup_D, Cup_E = [], [], [], [], []
 #     fileResult.write(result)
 #     print(len(Sqi),len(Sqi_1))
 Sqi, Sqi_1 = [], []
-timete = []
-with open("../1teraterm.log", mode="r", encoding="UTF-8") as op:
-    while True:
-        a = op.readline()
-        c = ".(\d\d\d\d-\d\d-\d\d.\d\d:\d\d:\d\d)"
-        b = re.split(c, a)
-        for i in range(0, int((len(b) - 1) / 2)):
-            timete += re.findall(".+\d\d:\d\d:\d\d", b[i * 2 + 1])
-            Sqi += re.findall(r"sqi_value.(\d+\.\d+).", b[i * 2 + 2])
-            print(timete, Sqi)
-        Sqi_value = re.findall(r"sqi_value.(\d+\.\d+).", a)
-        # if Sqi_value:
-        #     Sqi += Sqi_value
-        #     Sqi_1 += re.findall(r"....-..-.. (\d\d:\d\d:\d\d)\.", a)
 
-        if a == "":
-            break
-print(len(Sqi_1), len(Sqi))
+
+def Test():
+    a = [[], [], [], []]
+    for i in range(0, 4):
+        for x in range(0, 10):
+            a[i].append(x)
+    return a
+
+
+b = "[2022-06-09 00:43:18.827567][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[1->1] sqi_value[10222] sqi_level[5] break[0] "
+a=re.findall(r"sqi_value\[(\d+\.*.+?)\]",b)
+print(a)
 # #
 # test = "aaa,bb,vvf"
 # print(re.split("aa",test))
