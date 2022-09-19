@@ -42,8 +42,10 @@ def Test():
     return a
 
 
-b = "[2022-06-09 00:00:02.286372][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977MB] Free[2.55.9MB] Avai[297.8MB] Cach[54.7MB] "
+b = "[Thu Sep 15 19:45:31.032 2022] [2022-06-09 00:00:06.255488][invo_alg_fid.h           ][WRN] FaceIdFeature[0]::load(/tmp/sense/faceid/faceid0.db) ..."
 MEMOPY_00 = []
+a_time = "(\d\d\d\d-\d\d-\d\d.\d\d:\d\d:\d\d)"
+print(re.split(a_time, b))
 if "SYS MEMORY" in b:
     MEMOPY_02 = [["Total", "Free", "Avai", "Cach"],
                  ["Total\[(\d+\.?\d+?)MB\]", "Free\[(\d+\.?\d+?)MB\]", "Avai\[(\d+\.?\d+?)MB\]", "Cach\[(\d+\.?\d+?)MB\]"]]
