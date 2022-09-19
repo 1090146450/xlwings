@@ -42,9 +42,17 @@ def Test():
     return a
 
 
-b = "[2022-06-09 00:43:18.827567][invo_phy.cpp             ][INF] DEV ETHNET : device[eth0] linked[1->1] sqi_value[10222] sqi_level[5] break[0] "
-a=re.findall(r"sqi_value\[(\d+\.*.+?)\]",b)
-print(a)
+b = "[2022-06-09 00:00:02.286372][rte_monitor.cpp          ][INF] SYS MEMORY : Total[977MB] Free[2.55.9MB] Avai[297.8MB] Cach[54.7MB] "
+MEMOPY_00 = []
+if "SYS MEMORY" in b:
+    MEMOPY_02 = [["Total", "Free", "Avai", "Cach"],
+                 ["Total\[(\d+\.?\d+?)MB\]", "Free\[(\d+\.?\d+?)MB\]", "Avai\[(\d+\.?\d+?)MB\]", "Cach\[(\d+\.?\d+?)MB\]"]]
+    for x in range(0, 4):
+        if MEMOPY_02[0][x] in b:
+            MEMOPY_00 += re.findall(MEMOPY_02[1][x], b)
+        else:
+            MEMOPY_00.append("")
+print(MEMOPY_00)
 # #
 # test = "aaa,bb,vvf"
 # print(re.split("aa",test))
