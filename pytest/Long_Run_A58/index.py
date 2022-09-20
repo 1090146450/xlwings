@@ -41,7 +41,7 @@ FPS_1 = [[["dms0", "", "MIN", "MAX", ">25"],
 bp.cell_Center(bt[1])
 for i in range(0, 4):
     # 修改单元格宽度
-    bp.cell_wide(bt[1], dms0[i], 13)
+    bp.cell_wide(bt[1], dms0[i], 15)
     # 填入数据
     bp.add_cell(bt[1], dms0[i], FPS_1[i], transpose=True)
     # 修改颜色

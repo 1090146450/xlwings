@@ -17,7 +17,7 @@ class BasePage:
             self.book.sheets.add(str(name))
 
     # 单元格格式居中，默认全部单元格居中
-    def cell_Center(self, bt, name="A1:ck3000"):
+    def cell_Center(self, bt, name="A1:S999999"):
         bt.range(name).api.HorizontalAlignment = -4108
 
     # 添加数据，默认添加为横向添加
