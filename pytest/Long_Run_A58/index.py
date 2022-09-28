@@ -13,7 +13,7 @@ CPU_A1 = [["", "TOTAL", "Cpu0", "Cpu1", "Cpu2"],
           [" ", "TOTAL", "Cpu0", "Cpu1", "Cpu2"]]
 bp.add_cell(bt[0], "A1", CPU_A1)
 # 修改表数据居中
-bp.cell_Center(bt[0])
+bp.cell_Center(bt[0],name=("A1:E"+str(len(test_02.Cup_A)+6)))
 # 修改表格列宽
 bp.cell_wide(bt[0], "A1", 32)
 # 修改表格外边框
@@ -31,14 +31,14 @@ dms0 = ["A1:B1", "C1:D1", "E1:F1", "G1:H1", "A1", "I1"]
 FPS_1 = [[["dms0", "", "MIN", "MAX", ">25"],
           [" ", "FPS", "=MIN(B6:B999999)", "=MAX(B6:B999999)", "=COUNTIF(B6:B999999,\">25\")"]],
          [["oms1", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(D6:D999999)", "=COUNTIF(D6:D999999,\">25\")"]],
+          [" ", "FPS", "=MIN(D6:J999999)", "=MAX(D6:D999999)", "=COUNTIF(D6:D999999,\">25\")"]],
          [["oms2", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(F6:F999999)", "=COUNTIF(F6:F999999,\">25\")"]],
+          [" ", "FPS", "=MIN(F6:J999999)", "=MAX(F6:F999999)", "=COUNTIF(F6:F999999,\">25\")"]],
          [["oms3", "", "MIN", "MAX", ">25"],
-          [" ", "FPS", "=MIN(J6:J999999)", "=MAX(H6:H999999)", "=COUNTIF(H6:H999999,\">25\")"]]
+          [" ", "FPS", "=MIN(H6:J999999)", "=MAX(H6:H999999)", "=COUNTIF(H6:H999999,\">25\")"]]
          ]
 # 单元格居中
-bp.cell_Center(bt[1])
+bp.cell_Center(bt[1],name=("A1:H"+str(len(test_02.Fps_A[0])+6)))
 for i in range(0, 4):
     # 修改单元格宽度
     bp.cell_wide(bt[1], dms0[i], 15)
@@ -69,7 +69,8 @@ bp.cell_colo(bt[2], sqi)
 # 设置边框
 bp.cell_Line(bt[2], sqi)
 # 单元格居中
-bp.cell_Center(bt[2])
+bp.cell_Center(bt[2],name="A1:C"+str(len(test_02.Sqi)+6))
+# 填写数据
 bp.add_cell(bt[2],"A4", test_02.Sqi)
 
 # 表4
@@ -87,7 +88,7 @@ bp.cell_colo(bt[3], SYS)
 # 设置边框
 bp.cell_Line(bt[3], SYS)
 # 单元格居中
-bp.cell_Center(bt[3])
+bp.cell_Center(bt[3],name="A1:E"+str(len(test_02.MEMOPY)+6))
 # 添加数据
 bp.add_cell(bt[3],"A4", test_02.MEMOPY)
 # 退出

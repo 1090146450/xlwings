@@ -5,7 +5,7 @@ Cup_A, Fps_A,Sqi,MEMOPY = [], [[], [], [], []],[],[]
 
 
 def Input():
-    with open("../../A58T-20220915.log", mode="r",errors="ignore") as op:
+    with open("../../../../teraterm.log", mode="r",errors="ignore") as op:
         while True:
             # 每一行提取出来的数据
             a = op.readline()
