@@ -4,8 +4,7 @@ import test_02
 test_02.Input()
 # 创建表1
 bp = BasePage()
-bp.add_sheets(["03_SYS_MEMOPY", "02_SQI", "01_FPS", "00_CPU"])
-bt = bp.book.sheets
+bt=bp.add_sheets(["03_SYS_MEMOPY", "02_SQI", "01_FPS", "00_CPU"])
 # 在表中填写数据
 CPU_A1 = [["", "TOTAL", "Cpu0", "Cpu1", "Cpu2"],
           ["MIN", "=MIN(B5:B999999)", "=MIN(C5:C999999)", "=MIN(E5:E999999)", "=MIN(E5:E999999)"],

@@ -36,10 +36,5 @@ def Input():
             # 这是第四个
                 if MEMOPY_00:
                     MEMOPY.append(MEMOPY_00)
-
-            # Sqi_value = re.findall(r"sqi_value.(\d+\.\d+).", a)
-            # if Sqi_value:
-            #     Sqi[1] += Sqi_value
-            #     Sqi[0] += re.findall(r"....-..-.. (\d\d:\d\d:\d\d)\.", a)
             if a == "":
                 break

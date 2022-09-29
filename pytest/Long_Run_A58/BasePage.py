@@ -15,6 +15,7 @@ class BasePage:
                 self.book.sheets.add(str(name[i]))
         else:
             self.book.sheets.add(str(name))
+        return self.book.sheets
 
     # 单元格格式居中，默认全部单元格居中
     def cell_Center(self, bt, name="A1:S999"):
